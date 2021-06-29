@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--sintaxa pentru html este "<"(reprezentarea a ceea ce dorim) (clasa)-->
+<!--cu ajutorul EMET putem scrie (tipul clase).(numele clasei), iar
+acestea se vor transforma in sintaxa html-->
+<html lang="ro-RO">
+
+    <head>
+
+        <title>
+            Matei Leonard-Marian - link-uri utile
+        </title>
+
+        <meta charset="utf-8"/>
+        <!--setul de caractere folosit este utf-8 care
+        contine  aprox. 16.000 caractere, fata de ASCII
+        care contine doar 256. utf-8 contine si caractere chinezesti
+        sau caractere ca si ă,ș,î,ț...-->
+
+        <meta name="robots" content="index, follow" />
+        <!--aceasta linie de cod simbolizeaza ca
+        oricum ar ajunge un motor de cautare, cum ar fi Google
+        acesta are permisiunea sa citeasca paginile si sa acceseze
+        toate linkurile din acestea -->
+
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <!--tine de responsive design si ajusteaza dimensiunea
+        in functie de rozolutia dispozitivului, afecteza si zoomul.
+        ce e mai mare de 1.0 e zoom out, ce e mai mic de 1.0
+        e zoom in-->
+
+        <meta name="description" content="Link-uri si 
+        informatii despre mine" />
+        <!--PROTOCOLUL OPEN GRAPH
+        Inceput de facebook, este un protocol generic acum.
+        Acesta este folosit pentru atunci cand dai share printr-o 
+        platforma la acest link, si va arata informatii aditionale
+        despre pagina construita aici-->
+
+        <meta property="og:title" content="Matei Leonard-Marian 
+        - link-uri utile" />
+        <meta property="og:site_name" content="Matei Leonard-Marian" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ro_RO">
+        <meta property="og:url" content="https://www.matei-leonard.ro/" />
+        <meta property="og:image" content="og-image.jpg" /><!--TODO-->
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <link rel="stylesheet" href="style.css">
+        <!--am linkat html la css cu comanda rapida link:css-->
+    </head>
+
+    <body>
+
+        <div class="Container">
+
+            <header>
+                <img class="Avatar" src="MateiLeonard.jpg" 
+                width="250" height="250"/>
+                <h1 class="TitlulPaginii">
+                    <strong>Matei Leonard</strong>
+                </h1>
+                <p class="DescrierePrincipala">Link-uri si 
+                informatii despre mine</p>
+                <!-- p vine de la paragraf-->
+            </header>
+
+
+            <main>
+
+                <ul class="ListaLinkuri">
+
+                    <li class="ListaDescriere">
+                        <h2 class="ListaDescriereTitlu">Despre mine</h2>
+                        <p class="ListaDescriereText">
+                            Student la UBB Cluj-Napoca, 
+                            doresc sa imi construiesc o cariera in domeniul IT.
+                        </p>
+                    </li>
+
+                    <li class="ListaItem">
+                        <a href="https://www.linkedin.com/in/leonard-matei-84b743208/" 
+                        class="ListaLink" title="Intra pe profilul meu de LinkedIn">
+                            <h2 class="ListaTitlu">LinkedIn</h2>
+                            <p class="ListaText">https://www.linkedin.com/in/leonard-matei-84b743208/</p>
+                        </a>
+                        <!-- acest tip a face ca si continutul sa fie clickabil
+                        si sa te duca pe un anumit link-->
+                    </li>
+                    <!-- li vine de la lista item, element-->
+
+                   
+                    <li class="ListaItem">
+                        <a href="https://github.com/leomatei" 
+                        class="ListaLink" title="Intra pe profilul meu de GitHub">
+                            <h2 class="ListaTitlu">GitHub</h2>
+                            <p class="ListaText">https://github.com/leomatei</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- ul vine de la unordered list-->
+                <!-- daca voiam sa scriu in EMET acest ul scria
+                ul.ListaLinkuri>li.listaItem, acest lucru crea 
+                lista linkuri cu un singur listaitem
+                pentru a crea mai multe listaitem scriam
+                ul.ListaLinkuri>li.listaItem*x, unde vom crea
+                x listaitem, pentru a crea altcumva mai multe
+                lista item pur si simplu faceam cu copy-paste-->
+            </main>
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
+
