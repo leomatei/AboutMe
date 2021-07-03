@@ -6,13 +6,14 @@ html {background: black url("background.jpg") center center no-repeat fixed;
 body { display: block; place-items: center; margin: 0; 
 font-family: Inter, Helvetica, Arial, sans-serif;
 font-size: 24px; line-height: 1.5;
-    @media (min-width:312px) {display:grid;} }
+    @media (min-width:380px) {display:grid;} }
 
 .Container{ width: 90%; background: rgba(0,102,255,0.9);
 padding: 1rem; font-size:clamp(1rem,2vw,2rem); line-height: 1.5em;
     @media (min-width:400px){ margin: 2vh; padding: 2rem;
     border-radius: 2rem;}
-    @media (min-width:800px){ margin: 4vw; padding: 3rem;}}
+    @media (min-width:800px){ margin: 4vw; padding: 3rem;}
+    @media (min-width:1000px){width:75%;}}
 
 
     header{ 
