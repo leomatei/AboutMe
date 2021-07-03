@@ -6,7 +6,7 @@ html {background: black url("background.jpg") center center no-repeat fixed;
 body { display: block; margin: 0; 
 font-family: Inter, Helvetica, Arial, sans-serif;
 font-size: 24px; line-height: 1.5;
-    @media (min-width:312px) {display:grid;} 
+    @media (min-width:380px) {display:grid;} 
     @media (min-width:400px){ place-items: center;}
     @media (max-width:400px) {float:left}}
 
@@ -15,7 +15,8 @@ padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
     @media (min-width:400px){ margin: 2vh; padding: 2rem;
     border-radius: 2rem;}
     @media (min-width:800px){ margin: 4vw; padding: 3rem;}
-    @media (max-width:400px){width: 75%;}}
+    @media (max-width:400px){width: 75%;}
+    @media (min-width:1000px) {width:75%;}}
 
 
     header{ 
