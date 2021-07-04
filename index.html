@@ -9,14 +9,18 @@ acestea se vor transforma in sintaxa html-->
         <title>
             Matei Leonard-Marian - link-uri utile
         </title>
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--metaul de mai sus nu mai este relevant momentan, era
+        folosit cand se folosea si internet explorer-->
         <meta charset="utf-8"/>
         <!--setul de caractere folosit este utf-8 care
         contine  aprox. 16.000 caractere, fata de ASCII
         care contine doar 256. utf-8 contine si caractere chinezesti
         sau caractere ca si ă,ș,î,ț...-->
 
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow,
+        max-image-preview:large, max-snippet:-1, 
+        max-video-preview:-1" />
         <!--aceasta linie de cod simbolizeaza ca
         oricum ar ajunge un motor de cautare, cum ar fi Google
         acesta are permisiunea sa citeasca paginile si sa acceseze
@@ -39,15 +43,33 @@ acestea se vor transforma in sintaxa html-->
 
         <meta property="og:title" content="Matei Leonard-Marian 
         - link-uri utile" />
+        <meta property="og:description" content="Link-uri si 
+        informatii despre mine"/>"
         <meta property="og:site_name" content="Matei Leonard-Marian" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:url" content="https://www.matei-leonard.ro/" />
+        <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
         <meta property="og:image" content="og-image.jpg" /><!--TODO-->
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"/>
         <!--am linkat html la css cu comanda rapida link:css-->
+        <meta name="theme-color" content="#4F6DF5"/>
+        <meta name="apple-mobile-web-app-title" content="Matei Leonard">
+        <meta name="application-name" content="Matei Leonard">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="YES">
+        <link rel="apple-touch-startup-image" 
+        href="">
+        <link rel="apple-touch-icon" sizes="192x192" 
+        href="">
+        <link rel="apple-touch-icon" sizes="512x512" 
+        href="">
+        <link rel="icon" type="image/x-icon" href="">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+        <link rel="canonical" href="https://leomatei.github.io/AboutMe/"/>
     </head>
 
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
@@ -61,8 +83,8 @@ acestea se vor transforma in sintaxa html-->
                 <h1 class="TitlulPaginii">
                     <strong itemprop="name">Matei Leonard</strong>
                 </h1>
-                <p class="DescrierePrincipala">Link-uri și 
-                informații despre mine</p>
+                <p class="DescrierePrincipala" itemprop="description">
+                Link-uri și informații despre mine</p>
                 <!-- p vine de la paragraf-->
             </header>
 
