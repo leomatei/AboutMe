@@ -50,17 +50,16 @@ acestea se vor transforma in sintaxa html-->
         <!--am linkat html la css cu comanda rapida link:css-->
     </head>
 
-    <body>
-
-        <div class="Container">
+    <body itemscope="" itemtype="https://schema.org/ProfilePage">
+        <div class="Container" itemscope=""  
+        itemtype="https://schema.org/Person">
 
             <header>
-                <img class="Avatar" src="MateiLeonard.jpg" 
-                width="250" height="250"
-                alt="O poză cu mine"
-                title="O poză cu mine"/>
+                <img class="Avatar" src="MateiLeonard.jpg"
+                itemprop="image" width="250" height="250"
+                alt="O poză cu mine" title="O poză cu mine"/>
                 <h1 class="TitlulPaginii">
-                    <strong>Matei Leonard</strong>
+                    <strong itemprop="name">Matei Leonard</strong>
                 </h1>
                 <p class="DescrierePrincipala">Link-uri și 
                 informații despre mine</p>
@@ -85,7 +84,8 @@ acestea se vor transforma in sintaxa html-->
                         class="ListaLink" title="Intră pe profilul meu de LinkedIn"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">LinkedIn</h2>
-                            <p class="ListaText">https://www.linkedin.com/in/leonard-matei-84b743208/</p>
+                            <p class="ListaText" itemprop="url">
+                            https://www.linkedin.com/in/leonard-matei-84b743208/</p>
                         </a>
                         <!-- acest tip a face ca si continutul sa fie clickabil
                         si sa te duca pe un anumit link-->
@@ -98,7 +98,17 @@ acestea se vor transforma in sintaxa html-->
                         class="ListaLink" title="Intră pe profilul meu de GitHub"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">GitHub</h2>
-                            <p class="ListaText">https://github.com/leomatei</p>
+                            <p class="ListaText" itemprop="url">
+                            https://github.com/leomatei</p>
+                        </a>
+                    </li>
+
+                    <li class="ListaItem">
+                        <a href="mailto:leonard.matei2011@yahoo.com?subject=Salutare!" 
+                        class="ListaLink" title="Trimite-mi un mail!">
+                            <h2 class="ListaTitlu">E-mail:</h2>
+                            <p class="ListaText" itemprop="email">
+                            leonard.matei2011@yahoo.com</p>
                         </a>
                     </li>
                 </ul>
@@ -114,6 +124,8 @@ acestea se vor transforma in sintaxa html-->
             <footer>
             </footer>
         </div>
+
+
     </body>
 </html>
 
