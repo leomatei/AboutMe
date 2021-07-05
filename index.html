@@ -2,7 +2,7 @@
 <!--sintaxa pentru html este "<"(reprezentarea a ceea ce dorim) (clasa)-->
 <!--cu ajutorul EMET putem scrie (tipul clase).(numele clasei), iar
 acestea se vor transforma in sintaxa html-->
-<html lang="ro-RO">
+<html lang="ro-RO" class="no-js">
 
     <head>
 
@@ -70,6 +70,10 @@ acestea se vor transforma in sintaxa html-->
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
         <link rel="canonical" href="https://leomatei.github.io/AboutMe/"/>
+        <script type="module">
+            document.documentElement.classList.remove('no-js');
+            document.documentElement.classList.add('js');
+        </script>
     </head>
 
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
