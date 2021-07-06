@@ -23,9 +23,11 @@ padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
         @media(max-width: 300px )and(min-width: 256px){height:200px} 
         @media(min-width: 300px)and(max-width:900px){height:140px}}
         .Avatar{ display: block; width: 109px; height: auto;
-        margin: 0 1em 0 0; border-radius: 50%; 
+            margin: 0 1em 0 0; border-radius: 50%; 
         @media (min-width:300px){float: left; }  
         @media (min-width:900px){width: clamp(130px,14vw,12rem);}}
+            .Avatar img { display: block; width: 100%; height: auto;
+            border-radius: 50%;  }
         .TitlulPaginii{ display: block; font-size: 
         clamp(2rem,6vw,4rem);line-height: 1em; margin: 0; }
     main{ clear: both; }
