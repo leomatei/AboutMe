@@ -60,20 +60,15 @@ acestea se vor transforma in sintaxa html-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-touch-fullscreen" content="YES">
-        <link rel="apple-touch-startup-image" 
-        href="">
-        <link rel="apple-touch-icon" sizes="192x192" 
-        href="">
-        <link rel="apple-touch-icon" sizes="512x512" 
-        href="">
-        <link rel="icon" type="image/x-icon" href="">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
+       
+        
         <link rel="canonical" href="https://leomatei.github.io/AboutMe/"/>
         <script type="module">
             document.documentElement.classList.remove('no-js');
             document.documentElement.classList.add('js');
         </script>
+        <link rel="preload" href="./Inter-roman.var.woff2" as="font"
+        type="font/woff2" crossorigin />
     </head>
 
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
@@ -81,9 +76,27 @@ acestea se vor transforma in sintaxa html-->
         itemtype="https://schema.org/Person">
 
             <header>
-                <img class="Avatar" src="MateiLeonard.jpg"
-                itemprop="image" width="250" height="250"
-                alt="O poză cu mine" title="O poză cu mine"/>
+                <picture class="Avatar">
+                    <source type="image/webp" srcset="
+                    matei-leonard-109.webp 109w,
+                    matei-leonard-189.webp 189w
+                    " sizes="
+                    (max-width: 899px) 109px,
+                    (min-width: 900px) clamp(130px, 14vw, 12rem)
+                    "/>
+                    <img srcset="
+                    matei-leonard-109.jpg 109w,
+                    matei-leonard-189.jpg 189w
+                    "
+                    sizes="
+                    (max-width: 899px) 109px,
+                    (min-width: 900px) clamp(130px,14vw,12rem)
+                    "
+                    src="@TODO" alt="O poză cu mine" loading="lazy"
+                    decoding="async" width="109" height="109"
+                    itemprop="image"/>
+                </picture>
+
                 <h1 class="TitlulPaginii">
                     <strong itemprop="name">Matei Leonard</strong>
                 </h1>
