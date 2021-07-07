@@ -68,7 +68,10 @@ acestea se vor transforma in sintaxa html-->
             document.documentElement.classList.add('js');
         </script>
 
-        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+        <link rel="shortcut icon" type="image/x-icon" 
+        href="./favicon.ico">
+
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -171,6 +174,17 @@ acestea se vor transforma in sintaxa html-->
             </footer>
         </div>
 
+        <script defer src="script.js"></script>
+        <!--
+        daca nu se pune defer sau async browserul cand va ajunge la linia de mai sus
+        va rula codul si nu va mai incarca pagina pana nu ajunge sa terine codul
+        daca se pune async sau defer codul se va download codul si se va rula dupa 
+        ce se va incarca si pagina, defer este modul mai optim
+        daca punem mai multe taguri cu defer acestea se vor executa in ordinea scrierii
+        lor, daca acestea sunt puse cu async nu se garanteaza ca acestea se vor 
+        executa in ordine
+        
+        -->
 
     </body>
 </html>
