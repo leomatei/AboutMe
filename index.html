@@ -49,9 +49,11 @@ acestea se vor transforma in sintaxa html-->
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO">
         <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
-        <meta property="og:image" content="og-image.jpg" /><!--TODO-->
+        <meta property="og:image" content="./og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Link-uri si 
+        informatii despre mine" />
         <link rel="stylesheet" href="style.css"/>
         <!--am linkat html la css cu comanda rapida link:css-->
         <meta name="theme-color" content="#4F6DF5"/>
@@ -102,9 +104,13 @@ acestea se vor transforma in sintaxa html-->
                     (max-width: 899px) 109px,
                     (min-width: 900px) clamp(130px,14vw,12rem)
                     "
-                    src="@TODO" alt="O poză cu mine" loading="lazy"
+                    src="./matei-leonard-109.jpg" alt="O poză cu mine" loading="lazy"
                     decoding="async" width="109" height="109"
                     itemprop="image"/>
+                    <!--loading lazy este o proprietate care ajuta la optimizare
+                    daca poza este mai jos pusa pe site si trebuie dat scroll pentru
+                    a vedea poza, browserul nu va downloada din prima poza, o va 
+                    downloada cand userul este "aproape" de poza-->
                 </picture>
 
                 <h1 class="TitlulPaginii">
