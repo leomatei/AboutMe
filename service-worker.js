@@ -32,7 +32,7 @@ self.addEventListener('acivate', event =>{
 
 self.addEventListener('fetch', event =>{
     if (event.request.url.startsWith(self.location.origin)){
-        event.responswith(
+        event.respondWith(
             caches.match(event.request).then(
                 cachedResponse => {
                     if (cachedResponse){
