@@ -41,10 +41,33 @@ acestea se vor transforma in sintaxa html-->
         platforma la acest link, si va arata informatii aditionale
         despre pagina construita aici-->
         
+        
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '508999637036549',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v11.0'
+            });
+                
+            FB.AppEvents.logPageView();   
+                
+            };
+        
+            (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <meta property="og:title" content="Matei Leonard-Marian 
         - link-uri utile" />
         <meta property="og:description" content="Link-uri si 
         informatii despre mine"/>
+        <meta property="fb:app_id" content="508999637036549" />
         <meta property="og:site_name" content="Matei Leonard-Marian" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO">
