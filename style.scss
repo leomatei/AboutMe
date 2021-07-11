@@ -9,16 +9,20 @@
 }
 *, *::before, *::after { box-sizing: border-box}
 html {background: black url("background.jpg") center center no-repeat fixed;
-    -webkit-background-size: cover;-moz-background-size: cover;
-    -o-background-size: cover;background-size:cover;
-    color: white;}
+    background-size:cover;color: white;font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 24px; line-height: 1.5em;
+}
+@supports (font-variation-settings: normal){
+    html { font-family: Inter, Helvetica, Arial, sans-serif; }
+}
 
-body { display: block; margin: 0; 
-font-family: Inter, Helvetica, Arial, sans-serif;
-font-size: 24px; line-height: 1.5;
+body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpeed;
     @media (min-width:380px) {display:grid;} 
     @media (min-width:400px){ place-items: center;}
     @media (max-width:400px) {float:left}}
+img, picture { max-width: 100%; display: block; }
+input, button, textarea, select { font: inherit; }
+strong { font-weight: 900; }
 
 .Container{ width: 90%; background: rgba(0,102,255,0.9);
 padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
