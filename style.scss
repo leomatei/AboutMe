@@ -19,7 +19,7 @@ html {background: black url("background.jpg") center center no-repeat fixed;
 body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpeed;
     @media (min-width:380px) {display:grid;} 
     @media (min-width:400px){ place-items: center;}
-    @media (max-width:400px) {float:left}}
+    @media (max-width:401px) {float:left}}
 img, picture { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
 strong { font-weight: 900; }
@@ -34,8 +34,8 @@ padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
 
 
     header{ 
-        @media(max-width: 300px )and(min-width: 256px){height:200px} 
-        @media(min-width: 300px)and(max-width:900px){height:140px}}
+        @media(max-width: 300px )and(min-width: 256px){height:230px} 
+        @media(min-width: 300px)and(max-width:900px){height:200px}}
         .Avatar{ display: block; width: 109px; height: auto;
             margin: 0 1em 0 0; border-radius: 50%; 
         @media (min-width:300px){float: left; }  
