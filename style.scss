@@ -24,9 +24,48 @@ img, picture { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
 strong { font-weight: 900; }
 
+.LanguageButton {
+    display: flex;
+    font-size: 16px;
+    width: 110px;
+    height: 32px;
+    padding: 0 0.5em;
+    border-radius: 0.8em;
+    color: white;
+    background: rgba(0,102,255,0.9);
+    margin: 5px 0 0 calc(100% - 130px);
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+        color: #000;
+    }
+    @media (max-width:320px){
+        padding: 0 3px;
+    }
+    @media (max-width:400px){
+        margin-left: calc(100% - 150px);
+        padding: 0 10px;
+    }
+    .language-icon{
+        margin: 0 2px;
+    }
+    .language-link{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            color: #000;
+        }
+    }
+}
+
+// .LanguageButton:hover{
+//     background: #fff;
+//     color: #000;
+// }
+
 .Container{ width: 90%; background: rgba(0,102,255,0.9);
 padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
-    @media (min-width:320px){ margin: 2vh; padding: 2rem;
+    @media (min-width:320px){ margin: 1vh; padding: 2rem;
     border-radius: 2rem;}
     @media (min-width:800px){ margin: 4vw; padding: 3rem;}
     @media (max-width:400px){width: 85%;}
