@@ -5,7 +5,7 @@
     font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
-    src: url("./Inter-roman.var.woff2?v=3.19") format("woff2");
+    src: url("./Inter-Regular.woff2?v=3.19") format("woff2");
 }
 *, *::before, *::after { box-sizing: border-box}
 html {background: black url("background.jpg") center center no-repeat fixed;
@@ -27,7 +27,7 @@ strong { font-weight: 900; }
 .LanguageButton {
     display: flex;
     font-size: 16px;
-    width: 138px;
+    width: 141px;
     height: 32px;
     padding: 0 0.5em;
     border-radius: 0.8em;
@@ -55,7 +55,7 @@ strong { font-weight: 900; }
     }
     #languages{
         position: absolute;
-        width: 138px;
+        width: 141px;
         border-radius: 0.8em;
         color: #fff;
         background: rgba(0,102,255,0.9);
