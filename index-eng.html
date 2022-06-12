@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--sintaxa pentru html este "<"(reprezentarea a ceea ce dorim) (clasa)-->
+<!--cu ajutorul EMET putem scrie (tipul clase).(numele clasei), iar
+acestea se vor transforma in sintaxa html-->
 <html lang="ro-RO" class="no-js">
 
     <head>
@@ -111,48 +114,19 @@
 
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
         
-        <span 
-            class="LanguageButton"
-            onclick="openLanguageDropDown()"
-        >
+        <span class="LanguageButton">
             <img 
                 class="language-icon"
-                src="./gb.svg" 
-                alt="enlgish language icon"
+                src="./ro.svg" 
+                alt="romanian language icon"
                 width="20px"
                 height="30px"
             >
-            <span class="language-link">
-                <span>Language 👇</span>
-                <div id="languages" class="hidden">
-                    <div 
-                        class="language-item"
-                        onclick="selectLanguage('ro')"
-                    >
-                        <img 
-                            class="language-icon"
-                            src="./ro.svg" 
-                            alt="enlgish language icon"
-                            width="20px"
-                            height="30px"
-                        >
-                        RO
-                    </div>
-                    <div 
-                        class="language-item"
-                        onclick="selectLanguage('en')"
-                    >
-                        <img 
-                            class="language-icon"
-                            src="./gb.svg" 
-                            alt="enlgish language icon"
-                            width="20px"
-                            height="30px"
-                        >
-                        EN
-                    </div>
-                </div>
-            </span>
+            <a
+                class="language-link"
+            >
+                Language
+            </a>
         </span>
 
         <div class="Container" itemscope=""  
@@ -201,7 +175,7 @@
                 <ul class="ListaLinkuri">
 
                     <li class="ListaDescriere">
-                        <h2 class="ListaDescriereTitlu"><span>👀</span><span>Despre mine</span></h2>
+                        <h2 class="ListaDescriereTitlu">👀Despre mine</h2>
                         <p class="ListaDescriereText">
                             Student la UBB Cluj-Napoca, 
                             doresc să îmi construiesc o carieră în domeniul IT.

@@ -24,9 +24,72 @@ img, picture { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
 strong { font-weight: 900; }
 
+.LanguageButton {
+    display: flex;
+    font-size: 16px;
+    width: 138px;
+    height: 32px;
+    padding: 0 0.5em;
+    border-radius: 0.8em;
+    color: white;
+    background: rgba(0,102,255,0.9);
+    margin: 5px 0 0 calc(100% - 150px);
+    cursor: pointer;
+    &:hover,&:hover span{
+        background: #fff;
+        color: #000;
+    }
+    @media (max-width:320px){
+        padding: 0 3px;
+    }
+    @media (max-width:400px){
+        margin-left: calc(100% - 170px);
+        padding: 0 8px;
+    }
+    .language-icon{
+        margin: 0 2px;
+    }
+    .language-link{
+        text-decoration: none;
+        color: #fff;
+    }
+    #languages{
+        position: absolute;
+        width: 138px;
+        border-radius: 0.8em;
+        color: #fff;
+        background: rgba(0,102,255,0.9);
+        box-shadow: -5px 6px 15px 0px rgb(187, 208, 231);
+        margin-left: -32px;
+        top: 39px;
+    }
+    .hidden{
+        display: none;
+    }
+    .language-item{
+        display: flex;
+        padding: 0 0.5em;
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+        &:first-child:hover{
+            background: #fff;
+            color: #000;
+            border-radius: 0.8em 0.8em 0 0;
+        }
+        &:last-child:hover{
+            background: #fff;
+            color: #000;
+            border-radius: 0 0 0.8em 0.8em;
+        }
+    }
+}
+
+
 .Container{ width: 90%; background: rgba(0,102,255,0.9);
 padding: 1rem; font-size:clamp(0.9rem,2vw,2rem); line-height: 1.5em;
-    @media (min-width:320px){ margin: 2vh; padding: 2rem;
+    @media (min-width:320px){ margin: 1vh; padding: 2rem;
     border-radius: 2rem;}
     @media (min-width:800px){ margin: 4vw; padding: 3rem;}
     @media (max-width:400px){width: 85%;}
