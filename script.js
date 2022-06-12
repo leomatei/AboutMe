@@ -1,6 +1,3 @@
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register('./service-worker.js');
-// }
 function openLanguageDropDown(){
     const languages = document.getElementById('languages')
     languages.classList.contains('hidden') ? 
@@ -44,6 +41,6 @@ function changeLanguage(lang){
 }
 function selectLanguage(language){
     window.localStorage.setItem('language',language)
-    document.querySelector('.LanguageButton .language-icon').setAttribute('src',language==='ro'?'./ro.svg':'./gb.svg')
+    document.querySelector('.LanguageButton .language-icon').setAttribute('src',language==='ro'?'./assets/ro.svg':'./assets/gb.svg')
     changeLanguage(language)
 }

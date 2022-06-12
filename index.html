@@ -15,9 +15,9 @@
         care contine doar 256. utf-8 contine si caractere chinezesti
         sau caractere ca si ă,ș,î,ț...-->
 
-        <meta name="robots" content="index, follow,
-        max-image-preview:large, max-snippet:-1, 
-        max-video-preview:-1" />
+        <meta name="robots" 
+            content="index, follow,max-image-preview:large, 
+            max-snippet:-1, max-video-preview:-1" />
         <!--aceasta linie de cod simbolizeaza ca
         oricum ar ajunge un motor de cautare, cum ar fi Google
         acesta are permisiunea sa citeasca paginile si sa acceseze
@@ -67,7 +67,7 @@
         <meta property="og:locale" content="ro_RO">
         <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
         <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image" content="./og-image.jpg" />
+        <meta property="og:image" content="./assets/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Links and info" />
@@ -95,11 +95,11 @@
 
 
         <link rel="shortcut icon" type="image/x-icon" 
-        href="./favicon.ico">
+        href="./assets/favicon.ico">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="./assets/apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
         
     </head>
 
@@ -113,7 +113,7 @@
         >
             <img 
                 class="language-icon"
-                src="./gb.svg" 
+                src="./assets/gb.svg" 
                 alt="enlgish language icon"
                 width="20px"
                 height="30px"
@@ -127,7 +127,7 @@
                     >
                         <img 
                             class="language-icon"
-                            src="./ro.svg" 
+                            src="./assets/ro.svg" 
                             alt="enlgish language icon"
                             width="20px"
                             height="30px"
@@ -140,7 +140,7 @@
                     >
                         <img 
                             class="language-icon"
-                            src="./gb.svg" 
+                            src="./assets/gb.svg" 
                             alt="enlgish language icon"
                             width="20px"
                             height="30px"
@@ -152,28 +152,28 @@
         </span>
 
         <div class="Container" itemscope=""  
-        itemtype="https://schema.org/Person">
+            itemtype="https://schema.org/Person">
        
             <header>
                 
                 <picture class="Avatar">
                     <source type="image/webp" srcset="
-                    matei-leonard-109.webp 109w,
-                    matei-leonard-189.webp 189w
+                    ./assets/matei-leonard-109.webp 109w,
+                    ./assets/matei-leonard-189.webp 189w
                     " sizes="
                     (max-width: 899px) 109px,
                     (min-width: 900px) clamp(130px, 14vw, 12rem)
                     "/>
                     <img srcset="
-                    matei-leonard-109.jpg 109w,
-                    matei-leonard-189.jpg 189w
+                    ./assets/matei-leonard-109.jpg 109w,
+                    ./assets/matei-leonard-189.jpg 189w
                     "
                     sizes="
                     (max-width: 899px) 109px,
                     (min-width: 900px) clamp(130px,14vw,12rem)
                     "
-                    src="./matei-leonard-109.jpg" alt="O poză cu mine" loading="lazy"
-                    decoding="async" width="109" height="109"
+                    src="./matei-leonard-109.jpg" alt="O poză cu mine" 
+                    loading="lazy" decoding="async" width="109" height="109"
                     itemprop="image"/>
                     <!--loading lazy este o proprietate care ajuta la optimizare
                     daca poza este mai jos pusa pe site si trebuie dat scroll pentru
@@ -197,7 +197,9 @@
                 <ul class="ListaLinkuri">
 
                     <li class="ListaDescriere">
-                        <h2 class="ListaDescriereTitlu"><span>👀</span><span>About me</span></h2>
+                        <h2 class="ListaDescriereTitlu">
+                            <span>👀</span><span>About me</span>
+                        </h2>
                         <p class="ListaDescriereText">
                             FrontEnd developer at SF App Works from Oct 2021. I am trying my best to become a FullStack developer.
                         </p>
@@ -236,18 +238,14 @@
                             leonard.matei2011@yahoo.com</p>
                         </a>
                     </li>
+
                 </ul>
-                <!-- ul vine de la unordered list-->
-                <!-- daca voiam sa scriu in EMET acest ul scria
-                ul.ListaLinkuri>li.listaItem, acest lucru crea 
-                lista linkuri cu un singur listaitem
-                pentru a crea mai multe listaitem scriam
-                ul.ListaLinkuri>li.listaItem*x, unde vom crea
-                x listaitem, pentru a crea altcumva mai multe
-                lista item pur si simplu faceam cu copy-paste-->
+
             </main>
+
             <footer>
             </footer>
+
         </div>
 
         <script defer src="script.js"></script>
