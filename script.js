@@ -46,14 +46,47 @@ function changeLanguageMainPage(lang){
     document.getElementById('githubLink').setAttribute('title', language[lang].githubLink)
     document.getElementById('email').setAttribute('title', language[lang].email)
 }
+
+function changeLanguagePortofolio(lang){
+    const language = {
+        'en':{
+            pageTitle: 'portofolio',
+            pageDescription: 'My projects as a developer',
+            title: 'My projects',
+            description: 'Below you can see projects i worked for. There are projects from my job, projects from school and personal projects.',
+        },
+        'ro':{
+            pageTitle: 'portofoliu',
+            pageDescription: 'Proiectele mele personale și la care am contribuit',
+            title: 'Proiectele mele',
+            description: 'Mai jos sunt proiectele mele personale, unele folosite în cadrul facultății și proiectele la care am contribuit lucrând în cadrul poziției mele de Web developer.',
+        },
+    }
+
+    document.querySelector('meta[name="description"]').setAttribute('content',language[lang].pageDescription)
+    document.querySelector('meta[property="og:description"]').setAttribute('content',language[lang].pageDescription)
+    document.querySelector('meta[property="article:section"]').setAttribute('content',language[lang].pageDescription)
+    document.querySelector('meta[property="og:title"]').setAttribute('content',`Matei Leonard-Marian - ${language[lang].pageTitle}`)
+    document.querySelector('title').textContent=`Matei Leonard-Marian - ${language[lang].pageTitle}`
+    document.querySelector('.TitlulPaginii strong').textContent = language[lang].title
+    document.querySelector('.DescrierePrincipala').textContent = language[lang].description
+}
+
 function selectLanguage(language){
+    if(language===null){
+        language = 'en'
+    }
     document.documentElement.setAttribute("lang", language==='ro'?'ro-RO':'en-US');
     window.localStorage.setItem('language',language)
     document.querySelector('.LanguageButton .language-icon').setAttribute('src',language==='ro'?'./assets/ro.svg':'./assets/gb.svg')
    
+    console.log(window.location.href.toString().split(window.location.host)[1] === '/')
 
     if(window.location.href.toString().split(window.location.host)[1] === '/'){
         changeLanguageMainPage(language)
+    }
+    else {
+        changeLanguagePortofolio(language)
     }
 }
 
