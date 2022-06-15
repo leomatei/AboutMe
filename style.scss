@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Inter';
-    font-weight: 100 900;
     font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
@@ -29,6 +28,60 @@ body {
 img, picture { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
 strong { font-weight: 900; }
+
+.hidden{
+    display: none !important;
+}
+
+.readMore{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.7s;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+    
+    .downArrow{
+        margin-right: 2px;
+    }
+}
+
+.TitluProiect{
+    font-size: 24px;
+}
+
+.DescriereProiect{
+    font-size: 18px;
+}
+
+.imageGaleryProject{
+    display: flex;
+    >*{
+        margin-right: 5px;
+    }
+}
+
+.linkInDescription{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.MoreText{
+    // background-color: #fff;
+    // color:#000;
+    border-radius: 0.8em;
+    padding: 0 10px;
+    
+}
+
+.ListaLinkuri .ListaLinkuri{
+    padding: 10px;
+}
 
 .LanguageButton {
     display: flex;
@@ -85,9 +138,7 @@ strong { font-weight: 900; }
             top: 39px;
         }
     }
-    .hidden{
-        display: none;
-    }
+    
     .language-item{
         display: flex;
         padding: 0 0.5em;
@@ -110,6 +161,8 @@ strong { font-weight: 900; }
 
 
 .Container{ 
+    
+    max-width: 1050px;
     width: 90%; 
     background: rgba(0,102,255,0.9);
     padding: 1rem; 
@@ -163,6 +216,7 @@ strong { font-weight: 900; }
     main{ clear: both; }
 
     .ListaLinkuri{ 
+        
         display: block; 
         margin: 0; 
         padding: 0; 
@@ -187,6 +241,7 @@ strong { font-weight: 900; }
     .ListaDescriereText{  }
 
     .ListaItem{ 
+        
         display: block; 
         margin: 0; 
         padding: 0; 
@@ -194,6 +249,7 @@ strong { font-weight: 900; }
     }
 
     .ListaLink{ 
+        
         display: block; 
         padding:0.5em;
         color:#fff; 
@@ -213,6 +269,7 @@ strong { font-weight: 900; }
     }
 
     .ListaText{
+        
         white-space: nowrap;
         overflow:hidden;
         text-overflow: ellipsis;

@@ -80,13 +80,26 @@ function selectLanguage(language){
     window.localStorage.setItem('language',language)
     document.querySelector('.LanguageButton .language-icon').setAttribute('src',language==='ro'?'./assets/ro.svg':'./assets/gb.svg')
    
-    console.log(window.location.href.toString().split(window.location.host)[1] === '/')
+    // console.log(window.location.href.toString().split(window.location.host)[1])
 
-    if(window.location.href.toString().split(window.location.host)[1] === '/'){
+    if(window.location.href.toString().split(window.location.host)[1] === '/' ||
+    window.location.href.toString().split(window.location.host)[1] === '/index.html' ){
         changeLanguageMainPage(language)
-    }
-    else {
+    }else {
         changeLanguagePortofolio(language)
+    }
+}
+
+function expandReadMore(id,element){
+    console.log(element)
+    console.log(document.getElementById(id))
+    element.querySelector('img').style.transform='rotate(180deg)'
+    if(document.getElementById(id).classList.contains('hidden')){
+        document.getElementById(id).classList.remove('hidden')
+        element.querySelector('img').style.transform='rotate(180deg)'
+    } else {
+        document.getElementById(id).classList.add('hidden')
+        element.querySelector('img').style.transform=''
     }
 }
 
