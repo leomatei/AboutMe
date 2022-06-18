@@ -29,6 +29,19 @@ img, picture { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
 strong { font-weight: 900; }
 
+.popUp{
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    z-index: 2;
+    position: fixed;
+}
+
+.biggerImage{
+    margin: 7em 2em;
+    width: calc(100% - 4em)
+    // padding: 2em;
+}
+
 .hidden{
     display: none !important;
 }
@@ -60,7 +73,14 @@ strong { font-weight: 900; }
     display: flex;
     >*{
         margin-right: 5px;
-    }
+        cursor: pointer;
+    }    
+}
+
+.moreImagesGaleryProject{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .linkInDescription{

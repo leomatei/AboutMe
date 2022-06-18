@@ -103,4 +103,26 @@ function expandReadMore(id,element){
     }
 }
 
+function expandPicture(image){
+    const biggerImage = image.src.replace('small','big')
+    const newImage=document.createElement('img')
+    const newDiv=document.createElement('div')
+
+    newImage.src=biggerImage
+    newImage.classList.add('biggerImage')
+    newDiv.appendChild(newImage)
+    newDiv.classList.add('popUp')
+    
+    document.getElementById('root').insertAdjacentElement('beforebegin',newDiv)
+    newDiv.addEventListener('click',(event)=>{
+        if(event.srcElement !== newImage){
+            document.querySelector('html').removeChild(newDiv)
+            delete newImage
+            delete newDiv
+        }
+        
+    })
+    
+}
+
 selectLanguage(window.localStorage.getItem('language'))
