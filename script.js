@@ -80,7 +80,7 @@ function selectLanguage(language){
     window.localStorage.setItem('language',language)
     document.querySelector('.LanguageButton .language-icon').setAttribute('src',language==='ro'?'./assets/ro.svg':'./assets/gb.svg')
    
-    // console.log(window.location.href.toString().split(window.location.host)[1])
+    
 
     if(window.location.href.toString().split(window.location.host)[1] === '/' ||
     window.location.href.toString().split(window.location.host)[1] === '/index.html' ){
@@ -91,8 +91,6 @@ function selectLanguage(language){
 }
 
 function expandReadMore(id,element){
-    console.log(element)
-    console.log(document.getElementById(id))
     element.querySelector('img').style.transform='rotate(180deg)'
     if(document.getElementById(id).classList.contains('hidden')){
         document.getElementById(id).classList.remove('hidden')
@@ -108,19 +106,54 @@ function expandPicture(image){
     const newImage=document.createElement('img')
     const newDiv=document.createElement('div')
 
+    
+
+    let images=[]
+    Array.from(image.parentNode.parentNode.children).forEach(node=>{
+        images.push(node.firstElementChild.src)
+    })
+
+    let bigImages=[]
+
+    images.forEach(smallImageLink=>bigImages.push(smallImageLink.replace('small','big')))
+
+
+    const rightArrow=document.createElement('img')
+    rightArrow.src='./assets/down-arrow.svg'
+    rightArrow.classList.add('rightArrow')
+    rightArrow.addEventListener('click',(e)=>{
+        e.stopPropagation()
+        const currentIndex = bigImages.indexOf(document.querySelector('.biggerImage').src)
+        document.querySelector('.biggerImage').src = bigImages[(currentIndex+1)%(bigImages.length)]
+    })
+
+    const leftArrow=document.createElement('img')
+    leftArrow.src='./assets/down-arrow.svg'
+    leftArrow.classList.add('leftArrow')
+    leftArrow.addEventListener('click',(e)=>{
+        e.stopPropagation()
+        const currentIndex = bigImages.indexOf(document.querySelector('.biggerImage').src)
+        document.querySelector('.biggerImage').src = bigImages[(currentIndex+bigImages.length-1)%(bigImages.length)]
+    })
+
     newImage.src=biggerImage
     newImage.classList.add('biggerImage')
     newDiv.appendChild(newImage)
     newDiv.classList.add('popUp')
+
+    newDiv.insertAdjacentElement('afterbegin',leftArrow)
+    newDiv.insertAdjacentElement('beforeend',rightArrow)
     
     document.getElementById('root').insertAdjacentElement('beforebegin',newDiv)
+
+
+
     newDiv.addEventListener('click',(event)=>{
         if(event.srcElement !== newImage){
             document.querySelector('html').removeChild(newDiv)
             delete newImage
             delete newDiv
         }
-        
     })
     
 }

@@ -36,10 +36,26 @@ strong { font-weight: 900; }
     position: fixed;
 }
 
+.rightArrow{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 97%;
+    transform: rotate(270deg);
+}
+
+.leftArrow{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    transform: rotate(90deg);
+}
+
 .biggerImage{
-    margin: 7em 2em;
+    margin: 10% 2em;
     width: calc(100% - 4em)
-    // padding: 2em;
 }
 
 .hidden{
@@ -92,8 +108,6 @@ strong { font-weight: 900; }
 }
 
 .MoreText{
-    // background-color: #fff;
-    // color:#000;
     border-radius: 0.8em;
     padding: 0 10px;
     
@@ -112,7 +126,6 @@ strong { font-weight: 900; }
     border-radius: 0.8em;
     color: white;
     background: rgba(0,102,255,0.9);
-    // margin: 5px 0 0 calc(100% - 150px);
     position:absolute;
     top:  5px;
     left: calc(100% - 150px);
