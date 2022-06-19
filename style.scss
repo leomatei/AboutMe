@@ -31,7 +31,7 @@ strong { font-weight: 900; }
 
 .popUp{
     background: rgba(0,0,0,0.7);
-    min-height: 100vh;
+    min-height: 155vh;
     z-index: 2;
     position: fixed;
 }
@@ -41,7 +41,7 @@ strong { font-weight: 900; }
     height: 60px;
     position: absolute;
     top: 40%;
-    left: 97%;
+    left: calc(97% - 10px) ;
     transform: rotate(270deg);
 }
 
@@ -53,9 +53,24 @@ strong { font-weight: 900; }
     transform: rotate(90deg);
 }
 
+.rightArrow, .leftArrow{
+    @media( max-width: 768px){
+        top: 30%;
+    }
+}
+
 .biggerImage{
     margin: 10% 2em;
-    width: calc(100% - 4em)
+    width: calc(100% - 4em);
+    @media(max-width: 900px){
+        margin-top: 65px;
+    }
+    @media(max-width: 768px){
+        margin-top: 100px;
+    }
+    @media(max-width: 425px){
+        margin-top: 200px;
+    }
 }
 
 .hidden{
@@ -212,7 +227,7 @@ strong { font-weight: 900; }
     }
     @media (min-width:1000px) {width:75%;}
     @media (max-width:950px) {margin-top: 40px}
-    @media (max-width:400px){width: 85%;}
+    @media (max-width:400px){width: 85%; min-width: 430px;}
 
 }
 
