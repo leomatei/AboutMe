@@ -1,411 +1,485 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'Inter';
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: 'Regular';
-    src: url("./assets/Inter-Regular.woff2?v=3.19") format("woff2");
+  font-family: 'Inter';
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('./assets/Inter-Regular.woff2?v=3.19') format('woff2');
 }
-*, *::before, *::after { box-sizing: border-box}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
-    background: black url("./assets/background.jpg") center center no-repeat fixed;
-    background-size:cover;
-    color: white;
+  background: black url('./assets/background.jpg') center center no-repeat fixed;
+  background-size: cover;
+  color: white;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+@supports (font-variation-settings: normal) {
+  html {
     font-family: Inter, Helvetica, Arial, sans-serif;
-    font-size: 20px; line-height: 1.5em;
-}
-@supports (font-variation-settings: normal){
-    html { font-family: Inter, Helvetica, Arial, sans-serif; }
+  }
 }
 
-body { 
-    display: block; min-height: 100vh; 
-    margin: 0; text-rendering: optimizeSpeed;
-    @media (min-width:380px) {display:grid;} 
-    @media (min-width:400px){ place-items: center;}
-    @media (max-width:401px) {float:left}
-}
-img, picture { max-width: 100%; display: block; }
-input, button, textarea, select { font: inherit; }
-strong { font-weight: 900; }
-
-.popUp{
-    background: rgba(0,0,0,0.7);
-    min-height: 155vh;
-    width: 100vw;
-    z-index: 2;
-    position: fixed;
-}
-
-.rightArrow{
-    width: 30px;
-    height: 60px;
-    position: absolute;
-    top: 40%;
-    left: calc(97% - 10px) ;
-    transform: rotate(270deg);
-    @media(min-width: 1100px){
-        left: 98%;
-    }
-    @media(min-width: 2000px){
-        left: 99%;
-    }
-}
-
-.leftArrow{
-    width: 30px;
-    height: 60px;
-    position: absolute;
-    top: 40%;
-    transform: rotate(90deg);
-}
-
-.rightArrow, .leftArrow{
-    @media( max-width: 768px){
-        top: 30%;
-    }
-    
-}
-
-.biggerImage{
-    margin: 2em;
-    width: calc(100% - 4em);
-    height: 100%;
-    @media(max-width: 900px){
-        margin-top: 65px;
-    }
-    @media(max-width: 768px){
-        margin-top: 100px;
-    }
-    @media(max-width: 425px){
-        margin-top: 200px;
-    }
-}
-
-.Sublist .ListaItem:last-child{
-    border-bottom: none;
-}
-
-.hidden{
-    display: none !important;
-}
-
-.readMore{
-    display: flex;
-    font-size: 16px;
-    font-weight: 700;
-    transition: 0.7s;
-    cursor: pointer;
-    &:hover{
-        text-decoration: underline;
-    }
-    
-    .downArrow{
-        margin-right: 2px;
-    }
-}
-
-.TitluProiect{
-    font-size: 24px;
-}
-
-.DescriereProiect{
-    font-size: 18px;
-}
-
-.imageGaleryProject{
-    display: flex;
-    >*{
-        margin-right: 5px;
-        cursor: pointer;
-    }    
-}
-
-.moreImagesGaleryProject{
+body {
+  display: block;
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  @media (min-width: 380px) {
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 400px) {
+    place-items: center;
+  }
+  @media (max-width: 401px) {
+    float: left;
+  }
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+strong {
+  font-weight: 900;
 }
 
-.linkInDescription{
-    color: #fff;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-    }
+.popUp {
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 155vh;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
 }
 
-.MoreText{
-    border-radius: 0.8em;
-    padding: 0 10px;
-    
+.rightArrow {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  left: calc(97% - 10px);
+  transform: rotate(270deg);
+  @media (min-width: 1100px) {
+    left: 98%;
+  }
+  @media (min-width: 2000px) {
+    left: 99%;
+  }
 }
 
-.ListaLinkuri .ListaLinkuri{
-    padding: 10px;
+.leftArrow {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  transform: rotate(90deg);
+}
+
+.rightArrow,
+.leftArrow {
+  @media (max-width: 768px) {
+    top: 30%;
+  }
+}
+
+.biggerImage {
+  margin: 2em;
+  width: calc(100% - 4em);
+  height: 100%;
+  @media (max-width: 900px) {
+    margin-top: 65px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 425px) {
+    margin-top: 200px;
+  }
+}
+
+.Sublist .ListaItem:last-child {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.readMore {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.7s;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .downArrow {
+    margin-right: 2px;
+  }
+}
+
+.TitluProiect {
+  font-size: 24px;
+}
+
+.DescriereProiect {
+  font-size: 18px;
+}
+
+.imageGaleryProject {
+  display: flex;
+  > * {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+
+.moreImagesGaleryProject {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.linkInDescription {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.MoreText {
+  border-radius: 0.8em;
+  padding: 0 10px;
+}
+
+.ListaLinkuri .ListaLinkuri {
+  padding: 10px;
 }
 
 .LanguageButton {
-    display: flex;
-    font-size: 16px;
+  display: flex;
+  font-size: 16px;
+  width: 141px;
+  height: 32px;
+  padding: 0 0.5em;
+  border-radius: 0.8em;
+  color: white;
+  background: rgba(0, 102, 255, 0.9);
+  position: absolute;
+  top: 5px;
+  left: calc(100% - 150px);
+  cursor: pointer;
+  &:hover,
+  &:hover span {
+    background: #fff;
+    color: #000;
+  }
+
+  @media (max-width: 600px) {
+    left: 75%;
+  }
+
+  @media (max-width: 500px) {
+    left: 90%;
+  }
+  @media (max-width: 400px) {
+    left: 110%;
+    padding: 0 8px;
+  }
+  @media (max-width: 319px) {
+    padding: 0 3px;
+    position: fixed;
+    left: 315px;
+  }
+  .language-icon {
+    margin: 0 2px;
+  }
+  .language-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  #languages {
+    position: absolute;
     width: 141px;
-    height: 32px;
-    padding: 0 0.5em;
     border-radius: 0.8em;
-    color: white;
-    background: rgba(0,102,255,0.9);
-    position:absolute;
-    top:  5px;
-    left: calc(100% - 150px);
-    cursor: pointer;
-    &:hover,&:hover span{
-        background: #fff;
-        color: #000;
+    color: #fff;
+    background: rgba(0, 102, 255, 0.9);
+    box-shadow: -5px 6px 15px 0px rgb(187, 208, 231);
+    margin-left: -32px;
+    top: 43px;
+    @media (max-width: 800px) {
+      top: 39px;
     }
-    
-    @media (max-width:600px){
-        left: 75%;
+  }
+
+  .language-item {
+    display: flex;
+    padding: 0 0.5em;
+    &:hover {
+      background: #fff;
+      color: #000;
     }
-    
-    @media (max-width:500px){
-        left: 90%;
+    &:first-child:hover {
+      background: #fff;
+      color: #000;
+      border-radius: 0.8em 0.8em 0 0;
     }
-    @media (max-width:400px){
-        left: 110%;
-        padding: 0 8px;
+    &:last-child:hover {
+      background: #fff;
+      color: #000;
+      border-radius: 0 0 0.8em 0.8em;
     }
-    @media (max-width:319px){
-        padding: 0 3px;
-        position: fixed;
-        left: 315px;
-    }
-    .language-icon{
-        margin: 0 2px;
-    }
-    .language-link{
-        text-decoration: none;
-        color: #fff;
-    }
-    #languages{
-        position: absolute;
-        width: 141px;
-        border-radius: 0.8em;
-        color: #fff;
-        background: rgba(0,102,255,0.9);
-        box-shadow: -5px 6px 15px 0px rgb(187, 208, 231);
-        margin-left: -32px;
-        top: 43px;
-        @media (max-width: 800px){
-            top: 39px;
-        }
-    }
-    
-    .language-item{
-        display: flex;
-        padding: 0 0.5em;
-        &:hover{
-            background: #fff;
-            color: #000;
-        }
-        &:first-child:hover{
-            background: #fff;
-            color: #000;
-            border-radius: 0.8em 0.8em 0 0;
-        }
-        &:last-child:hover{
-            background: #fff;
-            color: #000;
-            border-radius: 0 0 0.8em 0.8em;
-        }
-    }
+  }
 }
 
-
-.Container{ 
-    
-    max-width: 1050px;
-    width: 90%; 
-    background: rgba(0,102,255,0.9);
-    padding: 1rem; 
-    font-size:clamp(0.9rem,2vw,2rem); 
-    line-height: 1.5em;
-    @media (min-width:320px){ 
-        margin: 1vh; 
-        padding: 2rem;
-        border-radius: 2rem;
-    }
-    @media (min-width:800px){ 
-        margin: 4vw; 
-        padding: 3rem;
-    }
-    @media (min-width:1000px) {width:75%;}
-    @media (max-width:950px) {margin-top: 40px}
-    @media (max-width:400px){width: 85%; min-width: 430px;}
-
+.Container {
+  max-width: 1050px;
+  width: 90%;
+  background: rgba(0, 102, 255, 0.9);
+  padding: 1rem;
+  font-size: clamp(0.9rem, 2vw, 2rem);
+  line-height: 1.5em;
+  @media (min-width: 320px) {
+    margin: 1vh;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  @media (min-width: 800px) {
+    margin: 4vw;
+    padding: 3rem;
+  }
+  @media (min-width: 1000px) {
+    width: 75%;
+  }
+  @media (max-width: 950px) {
+    margin-top: 40px;
+  }
+  @media (max-width: 400px) {
+    width: 85%;
+    min-width: 430px;
+  }
 }
 
+header {
+  @media (max-width: 300px) and(min-width: 256px) {
+    height: 10rem;
+  }
+  @media (min-width: 300px) and(max-width:900px) {
+    height: 8rem;
+  }
+}
 
-    header{ 
-        @media(max-width: 300px )and(min-width: 256px){height:10rem} 
-        @media(min-width: 300px)and(max-width:900px){height:8rem}
-    }
+.Avatar {
+  display: block;
+  width: 109px;
+  height: auto;
+  margin: 0 1em 0 0;
+  border-radius: 50%;
+  @media (min-width: 300px) {
+    float: left;
+  }
+  @media (min-width: 900px) {
+    width: clamp(130px, 14vw, 12rem);
+  }
+}
 
-    .Avatar{ 
-        display: block; 
-        width: 109px; 
-        height: auto;
-        margin: 0 1em 0 0; 
-        border-radius: 50%; 
-        @media (min-width:300px){float: left; }  
-        @media (min-width:900px){width: clamp(130px,14vw,12rem);}
-    }
+.Avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
-    .Avatar img { 
-        display: block; 
-        width: 100%; 
-        height: auto;
-        border-radius: 50%;  
-    }
+.TitlulPaginii {
+  display: block;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1em;
+  margin: 0;
+}
 
-    .TitlulPaginii{ 
-        display: block;
-        font-size: clamp(2rem,6vw,4rem);
-        line-height: 1em;
-        margin: 0; 
-    }
+main {
+  clear: both;
+}
 
-    main{ clear: both; }
+.ListaLinkuri {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #fff;
+  @media (max-width: 401px) {
+    margin: top 3em;
+  }
+}
+.ListaDescriere {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}
 
-    .ListaLinkuri{ 
-        
-        display: block; 
-        margin: 0; 
-        padding: 0; 
-        border-top: 1px solid #fff; 
-        @media(max-width:401px){margin: top 3em;}
-    }
-    .ListaDescriere{ 
-        display: block;
-        margin: 0; 
-        padding: 0;
-        border-bottom: 1px solid #fff
-    }
+.ListaDescriereTitlu {
+  display: block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
 
-    .ListaDescriereTitlu{
-        display: block;
-        font-size: 1em;
-        margin: 0; 
-        padding: 0; 
-        line-height: 1.5em;
-    }
+.ListaDescriereText {
+}
 
-    .ListaDescriereText{  }
+.ListaItem {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}
 
-    .ListaItem{ 
-        
-        display: block; 
-        margin: 0; 
-        padding: 0; 
-        border-bottom: 1px solid #fff 
-    }
+.ListaLink {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
 
-    .ListaLink{ 
-        
-        display: block; 
-        padding:0.5em;
-        color:#fff; 
-        text-decoration: none;
-        &:hover{
-            background: white;
-            color: black;
-        }
-    }
+.ListaTitlu {
+  display: block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
 
-    .ListaTitlu{ 
-        display: block; 
-        font-size: 1em; 
-        margin: 0;
-        padding: 0; 
-        line-height: 1.5em;
-    }
+.ListaText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-    .ListaText{
-        
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-    }
-                    
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within { scroll-behavior: auto }
-    *, *::before, *::after { 
-        animation-duration:0.01ms !important; 
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important; 
-        scroll-behavior: auto !important;
-    }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 //acest media este pentru tot fisierul html, are folosinta pentru persoanele cu rau de miscare
-//face ca scrollul sa fie mai prietenos si mai rapid 
+//face ca scrollul sa fie mai prietenos si mai rapid
 
-@media print{
-    *{ 
-        background-image: none; 
-        background: white; 
-        color: black
-    }
+@media print {
+  * {
+    background-image: none;
+    background: white;
+    color: black;
+  }
 
-    @page { margin: 2cm; }
-    @page :first { margin-top: 3cm; }
-    @page :left { margin-right: 3cm; }
-    @page :right { margin-left: 3cm; }
+  @page {
+    margin: 2cm;
+  }
+  @page :first {
+    margin-top: 3cm;
+  }
+  @page :left {
+    margin-right: 3cm;
+  }
+  @page :right {
+    margin-left: 3cm;
+  }
 
-    html { 
-        background: white; 
-        font-size: 12pt; 
-        line-height: 1.5em; 
-    }
-    a:link, a:visited { 
-        color: #00f; 
-        background: transparent; 
-        font-weight: bold;
-    }
-    a:not([href^="http"]):after{ 
-        content: " " attr(href) ")"; 
-        font-size:0.9em;
-    }
-    a[href^="/"]:after { content: " (https://leomatei.github.io/AboutMe" attr(href) ") "; }
-    a:after > img { content: ""; }
+  html {
+    background: white;
+    font-size: 12pt;
+    line-height: 1.5em;
+  }
+  a:link,
+  a:visited {
+    color: #00f;
+    background: transparent;
+    font-weight: bold;
+  }
+  a:not([href^='http']):after {
+    content: ' ' attr(href) ')';
+    font-size: 0.9em;
+  }
+  a[href^='/']:after {
+    content: ' (https://leomatei.github.io/AboutMe' attr(href) ') ';
+  }
+  a:after > img {
+    content: '';
+  }
 
-    body::after { 
-        content: "Copyright © Matei Leonard, toate drepturile rezervate."; 
-        display: block;
-        text-align: center;
-    }
+  body::after {
+    content: 'Copyright © Matei Leonard, toate drepturile rezervate.';
+    display: block;
+    text-align: center;
+  }
 
-    .Container { 
-        background: transparent;
-        margin: 0; 
-        padding: 0;
-    }
+  .Container {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
 
-    h1, h2, h3, h4, h5, h6 { 
-        page-break-after: avoid; 
-        page-break-inside: avoid;
-    }
-    h1+h2 { page-break-before: avoid; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  h1 + h2 {
+    page-break-before: avoid;
+  }
 
-    table, pre, img,  svg, blockquote, a { break-inside: avoid; }
+  table,
+  pre,
+  img,
+  svg,
+  blockquote,
+  a {
+    break-inside: avoid;
+  }
 
-    ul, ol, dl { page-break-before: avoid; }
+  ul,
+  ol,
+  dl {
+    page-break-before: avoid;
+  }
 
-    .TitlulPaginii { padding-top: 0.5em; }
-    .ListaText { 
-        display: inline; 
-        color: #00f;
-        white-space:normal; 
-        text-decoration: underline;
-    }
+  .TitlulPaginii {
+    padding-top: 0.5em;
+  }
+  .ListaText {
+    display: inline;
+    color: #00f;
+    white-space: normal;
+    text-decoration: underline;
+  }
 }
 /*
 aceste comenzi ne ajuta pentru pentru cand vrem sa printam pagina web
@@ -413,4 +487,3 @@ putem vizualiza cum ar arata pagina printata cu
 F12 > console > 3 puncte in stanga > rendering > 
 > emulate CSS media type > print ( optinal* > ctrl + p )
 */
-    
