@@ -25,6 +25,16 @@ html {
   }
 }
 
+.back-button {
+  background: rgba(0, 102, 255, 0.9);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 0.25rem;
+}
+
 body {
   display: block;
   margin: 0;
