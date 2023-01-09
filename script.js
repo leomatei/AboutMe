@@ -23,7 +23,7 @@ function changeLanguageMainPage(lang) {
       altPhoto: 'O poză cu mine',
       aboutMe: 'Despre mine',
       myDescription:
-        'FrontEnd developer la SF App Works din octombrie 2021. Îmi doresc să ajung pe o poziție de FullStack developer.',
+        'Am început ca și FrontEnd Developer in octombrie 2021. În septembrie 2022 am început sa lucrez ca și FullStack Developer. Vreau să ajung pe o poziție de Senior.',
       portofolio: 'Aici îmi poți vedea portofoliul!',
       portofolioLink: 'Intră pe portofoliul meu de proiecte',
       linkedinLink: 'Intră pe profilul meu de LinkedIn',
