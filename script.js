@@ -13,7 +13,7 @@ function changeLanguageMainPage(lang) {
       myDescription:
         'FrontEnd developer at SF App Works from Oct 2021. I am trying my best to become a FullStack developer.',
       portofolio: 'Click here to see my projects!',
-      portofolioLink: 'See my portofolio',
+      portofolioLink: 'See my portfolio',
       linkedinLink: 'See my LinkedIn profile',
       githubLink: 'See my GitHub profile',
       email: 'Send me an e-mail!',
@@ -59,10 +59,10 @@ function changeLanguageMainPage(lang) {
     language[lang].aboutMe;
   document.querySelector('.ListaDescriereText').textContent =
     language[lang].myDescription;
-  document.querySelector('#portofolio .ListaText').textContent =
+  document.querySelector('#portfolio .ListaText').textContent =
     language[lang].portofolio;
   document
-    .getElementById('portofolio')
+    .getElementById('portfolio')
     .setAttribute('title', language[lang].linkedinLink);
   document
     .getElementById('linkedinLink')
@@ -88,6 +88,7 @@ function selectLanguage(language) {
       'src',
       language === 'ro' ? './assets/ro.svg' : './assets/gb.svg'
     );
+  changeLanguageMainPage(language);
 }
 
 function expandReadMore(id, element) {
