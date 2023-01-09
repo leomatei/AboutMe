@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ro-RO" class="no-js">
+  <head>
+    <title>Matei Leonard-Marian - link-uri utile</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="robots"
+      content="index, follow,max-image-preview:large, 
+            max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,
+        initial-scale=1.0"
+    />
+    <meta name="description" content="Links and info" />
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '508999637036549',
+          //cookie     : true,
+          xfbml: true,
+          version: 'v11.0',
+        });
+
+        FB.AppEvents.logPageView();
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
+    <meta property="og:title" content="Matei Leonard-Marian - Links and info" />
+    <meta property="og:description" content="Links and info" />
+    <meta property="fb:app_id" content="508999637036549" />
+    <meta property="og:site_name" content="Matei Leonard-Marian" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image" content="./assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Links and info" />
+    <meta
+      property="article:publisher"
+      content="https://www.linkedin.com/in/leonard-matei-84b743208/"
+    />
+    <meta property="article:section" content="About me" />
+    <meta
+      property="article:published_time"
+      content="2021-06-30T17:30:00+03:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2021-07-07T17:30:00+03:00"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#4F6DF5" />
+    <meta name="apple-mobile-web-app-title" content="Matei Leonard" />
+    <meta name="application-name" content="Matei Leonard" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+
+    <link rel="canonical" href="https://leomatei.github.io/AboutMe/" />
+    <script type="module">
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <link
+      rel="./assets/apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+  </head>
+
+  <body id="root" itemscope="" itemtype="https://schema.org/ProfilePage">
+    <a class="back-button" href="/">
+      <img src="./assets/home-button.svg" alt="" />
+    </a>
+    <div class="Container" itemscope="" itemtype="https://schema.org/Person">
+      <header>
+        <h1 class="TitlulPaginii">
+          <strong itemprop="name">My projects</strong>
+        </h1>
+
+        <p class="DescrierePrincipala" itemprop="description">
+          Below you can see the projects I worked for at my job and personal
+          projects.
+        </p>
+      </header>
+
+      <main>
+        <ul class="ListaLinkuri">
+          <li class="ListaItem">
+            <span class="readMore" onclick="expandReadMore('JobProjects',this)">
+              <img
+                class="downArrow rotate"
+                src="./assets/down-arrow.svg"
+                alt="expand icon"
+                width="16px"
+              />
+
+              job projects
+            </span>
+            <ul id="JobProjects" class="ListaLinkuri Sublist">
+              <li class="ListaItem">
+                <div id="projectEdTech" class="ListaDropDown">
+                  <h2 class="TitluProiect">App for schools</h2>
+                  <b>Technologies:</b> React.js, Node.js, Swagger, Redux toolkit
+
+                  <p class="DescriereProiect" itemprop="">
+                    Worked as a FullStack developer in a small team, we started
+                    from scratch an app for schools. In this app you can login
+                    using google account linked to an Edlink (<a
+                      class="linkInDescription"
+                      href="https://ed.link"
+                      >edl.ink</a
+                    >) account. This app helps teachers and school staff to
+                    manage classes, lesson plans and more.
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('projectEdTechReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="projectEdTechReadMore" class="MoreText hidden">
+                    I created new pages and functionalities for schools, like
+                    adding lesson plans, reviewing lesson plans, logging in with
+                    a super user and giving permission to other pages.
+                    <br />
+                    This application is teacher focused and at this moment it
+                    has no features for students.
+                  </div>
+                </div>
+              </li>
+
+              <li class="ListaItem">
+                <div id="project1" class="ListaDropDown">
+                  <h2 class="TitluProiect">
+                    Video meeting app for adult foster care
+                  </h2>
+                  <b>Technologies:</b> React.js, Node.js, GraphQL
+
+                  <p class="DescriereProiect" itemprop="">
+                    Started working as a FrontEnd developer on ADA compliance,
+                    adding new pages and buttons. After learning more about
+                    architecture and BE part of the app I Started working as a
+                    FullStack Developer.
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project1ReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project1ReadMore" class="MoreText hidden">
+                    On ADA I started making navigation with TAB key easier and
+                    natural for old people, reformating code for a better
+                    accesibility, adding aditional titles and descriptions on
+                    components to create the best experience for users using a
+                    screen reader, making text and some elements more readable.
+                    I created and customized email templates on SendGrid. As a
+                    BackEnd Dev some valueable work of mine was solving bugs on
+                    sending emails, share screen, mute/unmute and implementing a
+                    feature to limit people group size of a video conference.
+                    <br />
+                  </div>
+                </div>
+              </li>
+
+              <li class="ListaItem">
+                <div id="project2" class="ListaDropDown">
+                  <h2 class="TitluProiect">
+                    Blog and support for LGBTQ+ teens
+                  </h2>
+                  <b>Technologies:</b> Javascript, HTML, CSS
+
+                  <p class="DescriereProiect" itemprop="">
+                    Worked as a FrontEnd developer for visual bugs and create
+                    some useful tools on the app.
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://imi.guide/"
+                      target="_blank"
+                      >https://imi.guide/</a
+                    >
+                  </p>
+
+                  <div class="imageGaleryProject">
+                    <a href="https://imi.guide/stress003" target="_blank">
+                      <img
+                        src="./assets/immi-guide-picture.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="https://imi.guide/queer004" target="_blank">
+                      <img
+                        src="./assets/immi-guide-picture2.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="https://imi.guide/saved" target="_blank">
+                      <img
+                        src="./assets/immi-guide-picture3.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <span
+                    class="readMore"
+                    onclick="expandReadMore('project2ReadMore',this)"
+                  >
+                    <img
+                      class="downArrow"
+                      src="./assets/down-arrow.svg"
+                      alt="expand icon"
+                      width="16px"
+                    />
+                    More details about my work on this project
+                  </span>
+                  <div id="project2ReadMore" class="MoreText hidden">
+                    I built a page using Zwibbler.js to create a place where
+                    teens can draw and let their emotions out (<a
+                      class="linkInDescription"
+                      href="https://imi.guide/queer004"
+                      target="_blank"
+                      >click here to see</a
+                    >). Created a page for bookmarked pages on this app (<a
+                      class="linkInDescription"
+                      href="https://imi.guide/saved"
+                      target="_blank"
+                      >click here to see</a
+                    >). The project was built in SquareSpace. All pages were
+                    made using drag and drop functionalities and I had to
+                    recreate them using html, css and vanilla javascript to
+                    respect client requirements.
+                  </div>
+                </div>
+              </li>
+
+              <li class="ListaItem">
+                <div id="project3" class="ListaDropDown">
+                  <h2 class="TitluProiect">Scraper for LinkedIn</h2>
+                  <b>Technologies:</b> Django, GoogleCloudStorage, ScraperAPI
+
+                  <p class="DescriereProiect" itemprop="">
+                    Worked with a more experienced dev, as a BackEnd developer
+                    on an application that can efficiently get important
+                    information from a public LinkedIn profile.
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project3ReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project3ReadMore" class="MoreText hidden">
+                    I used GoogleCloudStorage to store public LinkedIn profile
+                    urls, I used ScraperAPI to get full html of the profile, get
+                    important info using BeautifulSoup library in Python.
+                    Important details will be stored as JSON in a file in
+                    GoogleCloudStorage. Used multithreading to send more
+                    requests in ScraperAPI for time efficiency.
+                    <br />
+                  </div>
+                </div>
+              </li>
+
+              <li class="ListaItem">
+                <div id="project4" class="ListaDropDown">
+                  <h2 class="TitluProiect">
+                    LA Parks, a site where you can see parks and book parts of a
+                    park for activities
+                  </h2>
+                  <b>Technologies:</b> React.js, Drupal, Docker
+                  <p class="DescriereProiect" itemprop="">
+                    Worked in a team, as a FrontEnd developer for a short period
+                    of time. Fixed visual bugs and logic on FrontEnd.
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://www.laparks.org/"
+                      target="_blank"
+                      >https://www.laparks.org/</a
+                    >
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project4ReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project4ReadMore" class="MoreText hidden">
+                    I fixed an API filter on activities you can do in a park,
+                    based on personal account. The Project was built in Drupal
+                    7, React pages were integrated with Iframe. A big of my work
+                    consisted in visual bugs using CSS Injector in Drupal.
+                    <br />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="ListaItem">
+            <span
+              class="readMore"
+              onclick="expandReadMore('InternshipProject',this)"
+            >
+              <img
+                class="downArrow"
+                src="./assets/down-arrow.svg"
+                alt="expand icon"
+                width="16px"
+              />
+
+              internship project
+            </span>
+            <ul id="InternshipProject" class="ListaLinkuri Sublist hidden">
+              <li class="ListaItem">
+                <div id="project5" class="ListaDropDown">
+                  <h2 class="TitluProiect">
+                    An app where people can search for help
+                  </h2>
+                  <b>Technologies:</b> React.js, Express.js, MongoDB, Redux
+                  <p class="DescriereProiect" itemprop="">
+                    Worked with one more person as FullStack developers. On the
+                    app you can search taks and assign the task to you. You can
+                    also list a task and another user can help you with the
+                    task.
+                    <br />
+                  </p>
+
+                  <div class="imageGaleryProject">
+                    <div>
+                      <img
+                        src="./assets/intern-project-pic1-small.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                        onclick="expandPicture(this)"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/intern-project-pic2-small.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                        onclick="expandPicture(this)"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./assets/intern-project-pic3-small.jpg"
+                        width="200px"
+                        height="128px"
+                        loading="lazy"
+                        onclick="expandPicture(this)"
+                      />
+                    </div>
+                  </div>
+                  <span
+                    class="readMore"
+                    onclick="expandReadMore('project5ReadMore',this)"
+                  >
+                    <img
+                      class="downArrow"
+                      src="./assets/down-arrow.svg"
+                      alt="expand icon"
+                      width="16px"
+                    />
+                    More details about my work on this project
+                  </span>
+                  <div id="project5ReadMore" class="MoreText hidden">
+                    Created a sign-up page, map page with pins using MapBoxGL
+                    library and cards with tasks on FrontEnd. Created log-in,
+                    sign-up routes on BackEnd.
+                    <br />
+                    <div class="moreImagesGaleryProject">
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore4-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore7-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore6-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore1-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore3-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore5-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/intern-project-picmore2-small.jpg"
+                          width="200px"
+                          height="128px"
+                          loading="lazy"
+                          onclick="expandPicture(this)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="ListaItem">
+            <span
+              class="readMore"
+              onclick="expandReadMore('SchoolProjects',this)"
+            >
+              <img
+                class="downArrow"
+                src="./assets/down-arrow.svg"
+                alt="expand icon"
+                width="16px"
+              />
+
+              school projects
+            </span>
+            <ul id="SchoolProjects" class="ListaLinkuri Sublist hidden">
+              <li class="ListaItem">
+                <div id="project6" class="ListaDropDown">
+                  <h2 class="TitluProiect">Online shop</h2>
+                  <b>Technologies:</b> Next.js, GraphQL, GraphCMS
+                  <p class="DescriereProiect" itemprop="">
+                    On this project I used Next.js to create the FrontEnd, used
+                    Next APIs to create login and signup. Created DB using
+                    GraphCMS.
+                    <br />
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project6ReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project6ReadMore" class="MoreText hidden">
+                    Project build to practice in Next.js and GraphQL.
+                    <br />
+                  </div>
+                </div>
+              </li>
+              <li class="ListaItem">
+                <div id="project7" class="ListaDropDown">
+                  <h2 class="TitluProiect">Guest house</h2>
+                  <b>Technologies:</b> HTML, CSS, JQuery
+                  <p class="DescriereProiect" itemprop="">
+                    A site for a guest house where you can see rooms and create
+                    an account. No BackEnd. Over engineered project on FrontEnd
+                    for the sake of exercising.
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/"
+                      target="_blank"
+                      >Click here to see it!</a
+                    >
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project7ReadMore',this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project7ReadMore" class="MoreText hidden">
+                    The project as a whole is not great, but there are some nice
+                    features in it, such as:
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/rooms.html"
+                      target="_blank"
+                      >Search in table(Click to see)</a
+                    >
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/signup.html"
+                      target="_blank"
+                      >Implemented the functionality to create account with
+                      dynamic field validation(Click to see)</a
+                    >
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/edit-rooms"
+                      target="_blank"
+                      >An admin panel that requires futher research and
+                      work(Click to see)</a
+                    >
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/rooms/room1"
+                      target="_blank"
+                      >Slideshow with two fields, one field to see x previous
+                      image, second field is for slideshow image changing
+                      frequency(Click to see)</a
+                    >
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://leomatei.github.io/Proiect_programare_web/html5/rooms/room2"
+                      target="_blank"
+                      >Slideshow made exclusively with CSS(Click to see)</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="ListaItem">
+                <div id="project8" class="ListaDropDown">
+                  <h2 class="TitluProiect">App for a family doctor</h2>
+                  <b>Technologies:</b> Java
+                  <p class="DescriereProiect" itemprop="">
+                    App contains a table for diseases, pacients, drugs and
+                    appointment. I used ModelViewController design pattern.
+                    Created GUI using Swing in Java.
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      href="https://github.com/leomatei/MedicFamilie/tree/main/src"
+                      target="_blank"
+                      >Click here to see the source code!</a
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

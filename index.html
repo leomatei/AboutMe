@@ -1,265 +1,266 @@
 <!DOCTYPE html>
 <html lang="ro-RO" class="no-js">
+  <head>
+    <title>Matei Leonard-Marian - link-uri utile</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
 
-    <head>
+    <meta
+      name="robots"
+      content="index, follow,max-image-preview:large, 
+                max-snippet:-1, max-video-preview:-1"
+    />
 
-        <title>
-            Matei Leonard-Marian - link-uri utile
-        </title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--metaul de mai sus nu mai este relevant momentan, era
-        folosit cand se folosea si internet explorer-->
-        <meta charset="utf-8"/>
-        <!--setul de caractere folosit este utf-8 care
-        contine  aprox. 16.000 caractere, fata de ASCII
-        care contine doar 256. utf-8 contine si caractere chinezesti
-        sau caractere ca si ă,ș,î,ț...-->
+    <meta
+      name="viewport"
+      content="width=device-width,
+            initial-scale=1.0"
+    />
 
-        <meta name="robots" 
-            content="index, follow,max-image-preview:large, 
-            max-snippet:-1, max-video-preview:-1" />
-        <!--aceasta linie de cod simbolizeaza ca
-        oricum ar ajunge un motor de cautare, cum ar fi Google
-        acesta are permisiunea sa citeasca paginile si sa acceseze
-        toate linkurile din acestea -->
+    <meta name="description" content="Links and info" />
 
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0" />
-        <!--tine de responsive design si ajusteaza dimensiunea
-        in functie de rozolutia dispozitivului, afecteza si zoomul.
-        ce e mai mare de 1.0 e zoom out, ce e mai mic de 1.0
-        e zoom in-->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '508999637036549',
+          //cookie     : true,
+          xfbml: true,
+          version: 'v11.0',
+        });
 
-        <meta name="description" content="Links and info" />
-        <!--PROTOCOLUL OPEN GRAPH
-        Inceput de facebook, este un protocol generic acum.
-        Acesta este folosit pentru atunci cand dai share printr-o 
-        platforma la acest link, si va arata informatii aditionale
-        despre pagina construita aici-->
-        
-        
-        <script>
-            window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '508999637036549',
-                //cookie     : true,
-                xfbml      : true,
-                version    : 'v11.0'
-            });
-                
-            FB.AppEvents.logPageView();   
-                
-            };
-        
-            (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <meta property="og:title" content="Matei Leonard-Marian - Links and info" />
-        <meta property="og:description" content="Links and info"/>
-        <meta property="fb:app_id" content="508999637036549" />
-        <meta property="og:site_name" content="Matei Leonard-Marian" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="ro_RO">
-        <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image" content="./assets/og-image.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Links and info" />
+        FB.AppEvents.logPageView();
+      };
 
-        <meta property="article:publisher" content="https://www.linkedin.com/in/leonard-matei-84b743208/"/>
-        <meta property="article:section" content="About me"/>
-        <meta property="article:published_time" content="2021-06-30T17:30:00+03:00"/>
-        <meta property="article:modified_time" content="2021-07-07T17:30:00+03:00"/>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
+    <meta property="og:title" content="Matei Leonard-Marian - Links and info" />
+    <meta property="og:description" content="Links and info" />
+    <meta property="fb:app_id" content="508999637036549" />
+    <meta property="og:site_name" content="Matei Leonard-Marian" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:url" content="https://leomatei.github.io/AboutMe/" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image" content="./assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Links and info" />
 
-        <link rel="stylesheet" href="style.css"/>
-        <!--am linkat html la css cu comanda rapida link:css-->
-        <meta name="theme-color" content="#4F6DF5"/>
-        <meta name="apple-mobile-web-app-title" content="Matei Leonard">
-        <meta name="application-name" content="Matei Leonard">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-touch-fullscreen" content="YES">
-       
-        
-        <link rel="canonical" href="https://leomatei.github.io/AboutMe/"/>
-        <script type="module">
-            document.documentElement.classList.remove('no-js');
-            document.documentElement.classList.add('js');
-        </script>
+    <meta
+      property="article:publisher"
+      content="https://www.linkedin.com/in/leonard-matei-84b743208/"
+    />
+    <meta property="article:section" content="About me" />
+    <meta
+      property="article:published_time"
+      content="2021-06-30T17:30:00+03:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2021-07-07T17:30:00+03:00"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#4F6DF5" />
+    <meta name="apple-mobile-web-app-title" content="Matei Leonard" />
+    <meta name="application-name" content="Matei Leonard" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="YES" />
 
-        <link rel="shortcut icon" type="image/x-icon" 
-        href="./assets/favicon.ico">
+    <link rel="canonical" href="https://leomatei.github.io/AboutMe/" />
+    <script type="module">
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
 
-        <link rel="./assets/apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-        
-    </head>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
 
-    
+    <link
+      rel="./assets/apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+  </head>
 
-    <body itemscope="" itemtype="https://schema.org/ProfilePage">
-        
-        <span 
-            class="LanguageButton"
-            onclick="openLanguageDropDown()"
-        >
-            <img 
-                class="language-icon"
-                src="./assets/gb.svg" 
-                alt="enlgish language icon"
-                width="20px"
-                height="30px"
-            >
-            <span class="language-link">
-                <span>Language 👇</span>
-                <div id="languages" class="hidden">
-                    <div 
-                        class="language-item"
-                        onclick="selectLanguage('ro')"
-                    >
-                        <img 
-                            class="language-icon"
-                            src="./assets/ro.svg" 
-                            alt="enlgish language icon"
-                            width="20px"
-                            height="30px"
-                        >
-                        RO
-                    </div>
-                    <div 
-                        class="language-item"
-                        onclick="selectLanguage('en')"
-                    >
-                        <img 
-                            class="language-icon"
-                            src="./assets/gb.svg" 
-                            alt="enlgish language icon"
-                            width="20px"
-                            height="30px"
-                        >
-                        EN
-                    </div>
-                </div>
-            </span>
-        </span>
-
-        <div class="Container" itemscope=""  
-            itemtype="https://schema.org/Person">
-       
-            <header>
-                
-                <picture class="Avatar">
-                    <source type="image/webp" srcset="
-                    ./assets/matei-leonard-109.webp 109w,
-                    ./assets/matei-leonard-189.webp 189w
-                    " sizes="
-                    (max-width: 899px) 109px,
-                    (min-width: 900px) clamp(130px, 14vw, 12rem)
-                    "/>
-                    <img srcset="
-                    ./assets/matei-leonard-109.jpg 109w,
-                    ./assets/matei-leonard-189.jpg 189w
-                    "
-                    sizes="
-                    (max-width: 899px) 109px,
-                    (min-width: 900px) clamp(130px,14vw,12rem)
-                    "
-                    src="./matei-leonard-109.jpg" alt="O poză cu mine" 
-                    loading="lazy" decoding="async" width="109" height="109"
-                    itemprop="image"/>
-                    <!--loading lazy este o proprietate care ajuta la optimizare
-                    daca poza este mai jos pusa pe site si trebuie dat scroll pentru
-                    a vedea poza, browserul nu va downloada din prima poza, o va 
-                    downloada cand userul este "aproape" de poza-->
-                </picture>
-
-                <h1 class="TitlulPaginii">
-                    <strong itemprop="name">Matei Leonard</strong>
-                </h1>
-                
-                <p class="DescrierePrincipala" itemprop="description">
-                    Links and info</p>
-                <!-- p vine de la paragraf-->
-                
-            </header>
-
-
-            <main>
-
-                <ul class="ListaLinkuri">
-
-                    <li class="ListaDescriere">
-                        <h2 class="ListaDescriereTitlu">
-                            <span>👀</span><span>About me</span>
-                        </h2>
-                        <p class="ListaDescriereText">
-                            FrontEnd developer at SF App Works from Oct 2021. I am trying my best to become a FullStack developer.
-                        </p>
-                    </li>
-
-                    <li class="ListaItem">
-                        <a id="linkedinLink" href="https://www.linkedin.com/in/leonard-matei-84b743208/" 
-                        class="ListaLink" title="See my LinkedIn profile"
-                        target="_blank" rel="noreferrer noopener">
-                            <h2 class="ListaTitlu">📚LinkedIn</h2>
-                            <p class="ListaText" itemprop="url">
-                            https://www.linkedin.com/in/leonard-matei-84b743208/</p>
-                        </a>
-                        <!-- acest tip a face ca si continutul sa fie clickabil
-                        si sa te duca pe un anumit link-->
-                    </li>
-                    <!-- li vine de la lista item, element-->
-
-                   
-                    <li class="ListaItem">
-                        <a id="githubLink" href="https://github.com/leomatei" 
-                        class="ListaLink" title="See my GitHub profile"
-                        target="_blank" rel="noreferrer noopener">
-                            <h2 class="ListaTitlu">📑GitHub</h2>
-                            <p class="ListaText" itemprop="url">
-                            https://github.com/leomatei</p>
-                        </a>
-                    </li>
-
-
-                    <li class="ListaItem">
-                        <a id="email" href="mailto:leonard.matei2011@yahoo.com?subject=Salutare!" 
-                        class="ListaLink" title="Send me an e-mail!">
-                            <h2 class="ListaTitlu">📫E-mail:</h2>
-                            <p class="ListaText" itemprop="email">
-                            leonard.matei2011@yahoo.com</p>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </main>
-
-            <footer>
-            </footer>
-
+  <body itemscope="" itemtype="https://schema.org/ProfilePage">
+    <span class="LanguageButton" onclick="openLanguageDropDown()">
+      <img
+        class="language-icon"
+        src="./assets/gb.svg"
+        alt="enlgish language icon"
+        width="20px"
+        height="30px"
+      />
+      <span class="language-link">
+        <span>Language 👇</span>
+        <div id="languages" class="hidden">
+          <div class="language-item" onclick="selectLanguage('ro')">
+            <img
+              class="language-icon"
+              src="./assets/ro.svg"
+              alt="enlgish language icon"
+              width="20px"
+              height="30px"
+            />
+            RO
+          </div>
+          <div class="language-item" onclick="selectLanguage('en')">
+            <img
+              class="language-icon"
+              src="./assets/gb.svg"
+              alt="enlgish language icon"
+              width="20px"
+              height="30px"
+            />
+            EN
+          </div>
         </div>
+      </span>
+    </span>
 
-        <script defer src="script.js"></script>
-        <!--
-        daca nu se pune defer sau async browserul cand va ajunge la linia de mai sus
-        va rula codul si nu va mai incarca pagina pana nu ajunge sa terine codul
-        daca se pune async sau defer codul se va download codul si se va rula dupa 
-        ce se va incarca si pagina, defer este modul mai optim
-        daca punem mai multe taguri cu defer acestea se vor executa in ordinea scrierii
-        lor, daca acestea sunt puse cu async nu se garanteaza ca acestea se vor 
-        executa in ordine
-        
-        -->
+    <div class="Container" itemscope="" itemtype="https://schema.org/Person">
+      <header>
+        <picture class="Avatar">
+          <source
+            type="image/webp"
+            srcset="
+              ./assets/matei-leonard-109.webp 109w,
+              ./assets/matei-leonard-189.webp 189w
+            "
+            sizes="
+                        (max-width: 899px) 109px,
+                        (min-width: 900px) clamp(130px, 14vw, 12rem)
+                        "
+          />
+          <img
+            srcset="
+              ./assets/matei-leonard-109.jpg 109w,
+              ./assets/matei-leonard-189.jpg 189w
+            "
+            sizes="
+                        (max-width: 899px) 109px,
+                        (min-width: 900px) clamp(130px,14vw,12rem)
+                        "
+            src="./matei-leonard-109.jpg"
+            alt="O poză cu mine"
+            loading="lazy"
+            decoding="async"
+            width="109"
+            height="109"
+            itemprop="image"
+          />
+        </picture>
 
-    </body>
+        <h1 class="TitlulPaginii">
+          <strong itemprop="name">Matei Leonard</strong>
+        </h1>
+
+        <p class="DescrierePrincipala" itemprop="description">Links and info</p>
+      </header>
+
+      <main>
+        <ul class="ListaLinkuri">
+          <li class="ListaDescriere">
+            <h2 class="ListaDescriereTitlu">
+              <span>👀</span><span>About me</span>
+            </h2>
+            <p class="ListaDescriereText">
+              Started as a FrontEnd developer at SF App Works from Oct 2021. In
+              September 2022 I transitioned to FullStack developer. I am trying
+              my best to become a Senior FullStack Developer.
+            </p>
+          </li>
+
+          <li class="ListaItem">
+            <a
+              id="portfolio"
+              href="./portfolio.html"
+              class="ListaLink"
+              title="See my portfolio"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h2 class="ListaTitlu">🐣Portfolio</h2>
+              <p class="ListaText" itemprop="url">
+                Click here to see my projects!
+              </p>
+            </a>
+          </li>
+
+          <li class="ListaItem">
+            <a
+              id="linkedinLink"
+              href="https://www.linkedin.com/in/leonard-matei-84b743208/"
+              class="ListaLink"
+              title="See my LinkedIn profile"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h2 class="ListaTitlu">📚LinkedIn</h2>
+              <p class="ListaText" itemprop="url">
+                https://www.linkedin.com/in/leonard-matei-84b743208/
+              </p>
+            </a>
+          </li>
+
+          <li class="ListaItem">
+            <a
+              id="githubLink"
+              href="https://github.com/leomatei"
+              class="ListaLink"
+              title="See my GitHub profile"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <h2 class="ListaTitlu">📑GitHub</h2>
+              <p class="ListaText" itemprop="url">
+                https://github.com/leomatei
+              </p>
+            </a>
+          </li>
+
+          <li class="ListaItem">
+            <a
+              id="email"
+              href="mailto:leonard.matei2011@yahoo.com?subject=Salutare!"
+              class="ListaLink"
+              title="Send me an e-mail!"
+            >
+              <h2 class="ListaTitlu">📫E-mail:</h2>
+              <p class="ListaText" itemprop="email">
+                leonard.matei2011@yahoo.com
+              </p>
+            </a>
+          </li>
+        </ul>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
 </html>
-
