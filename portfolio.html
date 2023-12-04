@@ -109,7 +109,21 @@
           <strong itemprop="name">My projects</strong>
         </h1>
 
+        <!-- @TODO: add hackathon experience -->
+
         <p class="DescrierePrincipala" itemprop="description">
+          In my journey as a FullStack developer, I've had the opportunity to
+          contribute to diverse projects, ranging from a video meeting app for
+          adult foster care to a school management application and a mini-blog
+          for supporting LGBTQ+ teens. My experiences include addressing ADA
+          compliance, implementing new features and fixing bug on video
+          conferences, developing functionalities for lesson planning and
+          syncing databases. Engaging with projects such as a scraper for
+          LinkedIn and a parks activity filter has honed my skills in efficient
+          data extraction and resolving API-related challenges. Throughout, I've
+          maintained a passion for continuous learning, evident in my work on
+          diverse technologies, including React.js, Node.js.
+          <br />
           Below you can see the projects I worked for at my job and personal
           projects.
         </p>
@@ -130,19 +144,85 @@
             </span>
             <ul id="JobProjects" class="ListaLinkuri Sublist">
               <li class="ListaItem">
-                <div id="projectEdTech" class="ListaDropDown">
-                  <h2 class="TitluProiect">App for schools</h2>
-                  <b>Technologies:</b> React.js, Node.js, Swagger, Redux toolkit
+                <div id="project1" class="ListaDropDown">
+                  <h2 class="TitluProiect">
+                    Video meeting app for adult foster care
+                  </h2>
+                  <p class="PerioadaProiects">
+                    Feb. 2022 - Oct. 2022 & Sep. 2023 - Present
+                  </p>
+                  <b>Technologies:</b> React.js, Node.js, GraphQL, Prisma,
+                  Telnyx
 
                   <p class="DescriereProiect" itemprop="">
-                    Worked as a FullStack developer in a small team, we started
-                    from scratch an app for schools. In this app you can login
-                    using google account linked to an Edlink (<a
-                      class="linkInDescription"
-                      href="https://ed.link"
+                    I initially joined as a FrontEnd developer, focusing on ADA
+                    compliance, adding new pages, and implementing buttons. As I
+                    gained a deeper understanding of the app's architecture and
+                    backend, I transitioned into a FullStack Developer role.
+                    <span
+                      class="readMore"
+                      onclick="expandReadMore('project1ReadMore', this)"
+                    >
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px"
+                      />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project1ReadMore" class="MoreText hidden">
+                    I joined this project when the senior developer transitioned
+                    from Twilio to
+                    <a class="linkInDescription" href="https://telnyx.com/">
+                      Telnyx</a
+                    >
+                    for the audio/video meeting client. He helped me understand
+                    the project, and in turn, I assisted him with the frontend
+                    aspects of the migration.
+                    <br />
+                    During ADA compliance work, I enhanced navigation using the
+                    TAB key for elderly users. I reformatted code to improve
+                    accessibility, added additional titles and descriptions to
+                    components for a better user experience with screen readers,
+                    and made text and elements more readable. On the backend, I
+                    addressed issues related to sending emails, screen sharing,
+                    mute/unmute functionality, and implemented a feature to
+                    limit the group size of a video conference.
+                    <br />
+                    Resumed my involvement in this project in September 2023,
+                    addressing bugs and incorporating small features. Introduced
+                    a monitoring feature to track user experience, recording
+                    instances such as prolonged response times, timeouts,
+                    external errors (e.g., failed to fetch, network errors,
+                    Telnyx errors), reconnects, and unusual events from phone
+                    users.
+
+                    <br />
+                  </div>
+                </div>
+              </li>
+
+              <li class="ListaItem">
+                <div id="projectEdTech" class="ListaDropDown">
+                  <h2 class="TitluProiect">School Management App</h2>
+                  <p class="PerioadaProiects">Oct. 2022 - Sep. 2023</p>
+                  <b>Technologies:</b> React.js, Node.js, Express.js, Sequelize,
+                  Swagger, Redux toolkit, Redis
+
+                  <p class="DescriereProiect" itemprop="">
+                    Collaborated as a FullStack developer within a tight-knit
+                    team, where we embarked on creating a comprehensive app
+                    tailored for schools. The application streamlines
+                    administrative tasks for teachers and school staff by
+                    offering login through a Google account linked to an Edlink
+                    (<a class="linkInDescription" href="https://ed.link"
                       >edl.ink</a
-                    >) account. This app helps teachers and school staff to
-                    manage classes, lesson plans and more.
+                    >) account. This encompasses various functionalities,
+                    including class management and lesson planning, with data
+                    stored in Google Drive.
                     <span
                       class="readMore"
                       onclick="expandReadMore('projectEdTechReadMore',this)"
@@ -158,53 +238,31 @@
                   </p>
 
                   <div id="projectEdTechReadMore" class="MoreText hidden">
-                    I created new pages and functionalities for schools, like
-                    adding lesson plans, reviewing lesson plans, logging in with
-                    a super user and giving permission to other pages.
+                    Developed new pages and functionalities for schools, such as
+                    adding and reviewing lesson plans, implementing super user
+                    login, granting permissions to other pages, creating
+                    sortable and filterable tables, and enabling keyword
+                    searches for lesson plans. Additionally, I worked on
+                    features like synchronizing the application's database with
+                    the Edlinks database, implementing forms, pagination,
+                    enabling the addition of files from Google Drive, and
+                    incorporating YouTube videos as attachments to lesson plans.
+                    Implemented notifications for changes in lesson plans.
                     <br />
-                    This application is teacher focused and at this moment it
-                    has no features for students.
-                  </div>
-                </div>
-              </li>
-
-              <li class="ListaItem">
-                <div id="project1" class="ListaDropDown">
-                  <h2 class="TitluProiect">
-                    Video meeting app for adult foster care
-                  </h2>
-                  <b>Technologies:</b> React.js, Node.js, GraphQL
-
-                  <p class="DescriereProiect" itemprop="">
-                    Started working as a FrontEnd developer on ADA compliance,
-                    adding new pages and buttons. After learning more about
-                    architecture and BE part of the app I Started working as a
-                    FullStack Developer.
-                    <span
-                      class="readMore"
-                      onclick="expandReadMore('project1ReadMore',this)"
-                    >
-                      <img
-                        class="downArrow"
-                        src="./assets/down-arrow.svg"
-                        alt="expand icon"
-                        width="16px"
-                      />
-                      More details about my work on this project
-                    </span>
-                  </p>
-
-                  <div id="project1ReadMore" class="MoreText hidden">
-                    On ADA I started making navigation with TAB key easier and
-                    natural for old people, reformating code for a better
-                    accesibility, adding aditional titles and descriptions on
-                    components to create the best experience for users using a
-                    screen reader, making text and some elements more readable.
-                    I created and customized email templates on SendGrid. As a
-                    BackEnd Dev some valueable work of mine was solving bugs on
-                    sending emails, share screen, mute/unmute and implementing a
-                    feature to limit people group size of a video conference.
+                    Notably, this application is currently designed with a
+                    teacher-centric focus and does not include features for
+                    students.
                     <br />
+                    Tasked with developing a feature to add US state standards
+                    to lesson plans, allowing teachers to choose and link
+                    specific state standards and update them. Also, implemented
+                    a calendar feature to showcase lesson plans based on the
+                    scheduled teaching date, accommodating different time zones
+                    associated with the school.
+                    <br />
+                    Implemented functionality to include schools that do not use
+                    a Learning Management System (LMS), such as Google Classroom
+                    or Canvas, into our application.
                   </div>
                 </div>
               </li>
@@ -214,11 +272,12 @@
                   <h2 class="TitluProiect">
                     Blog and support for LGBTQ+ teens
                   </h2>
+                  <p class="PerioadaProiects">Feb. 2022</p>
                   <b>Technologies:</b> Javascript, HTML, CSS
 
                   <p class="DescriereProiect" itemprop="">
-                    Worked as a FrontEnd developer for visual bugs and create
-                    some useful tools on the app.
+                    Served as a FrontEnd developer, addressing visual bugs and
+                    crafting beneficial tools within the application.
                     <br />
                     <a
                       class="linkInDescription"
@@ -267,21 +326,23 @@
                     More details about my work on this project
                   </span>
                   <div id="project2ReadMore" class="MoreText hidden">
-                    I built a page using Zwibbler.js to create a place where
-                    teens can draw and let their emotions out (<a
+                    Developed a platform using Zwibbler.js, providing a space
+                    for teenagers to express themselves through drawing and
+                    emotional release (<a
                       class="linkInDescription"
                       href="https://imi.guide/queer004"
                       target="_blank"
                       >click here to see</a
-                    >). Created a page for bookmarked pages on this app (<a
+                    >). Additionally, designed a page for bookmarked content
+                    within the app (<a
                       class="linkInDescription"
                       href="https://imi.guide/saved"
                       target="_blank"
                       >click here to see</a
-                    >). The project was built in SquareSpace. All pages were
-                    made using drag and drop functionalities and I had to
-                    recreate them using html, css and vanilla javascript to
-                    respect client requirements.
+                    >). The entire project was constructed on SquareSpace,
+                    utilizing drag-and-drop functionalities. To meet client
+                    specifications, I reconstructed all pages using HTML, CSS,
+                    and vanilla JavaScript.
                   </div>
                 </div>
               </li>
@@ -289,12 +350,14 @@
               <li class="ListaItem">
                 <div id="project3" class="ListaDropDown">
                   <h2 class="TitluProiect">Scraper for LinkedIn</h2>
+                  <p class="PerioadaProiects">Dec. 2021 - Jan. 2022</p>
                   <b>Technologies:</b> Django, GoogleCloudStorage, ScraperAPI
 
                   <p class="DescriereProiect" itemprop="">
-                    Worked with a more experienced dev, as a BackEnd developer
-                    on an application that can efficiently get important
-                    information from a public LinkedIn profile.
+                    Collaborated with a seasoned developer, functioning as a
+                    BackEnd developer on an application designed to extract
+                    important information efficiently from public LinkedIn
+                    profiles.
                     <span
                       class="readMore"
                       onclick="expandReadMore('project3ReadMore',this)"
@@ -310,12 +373,13 @@
                   </p>
 
                   <div id="project3ReadMore" class="MoreText hidden">
-                    I used GoogleCloudStorage to store public LinkedIn profile
-                    urls, I used ScraperAPI to get full html of the profile, get
-                    important info using BeautifulSoup library in Python.
-                    Important details will be stored as JSON in a file in
-                    GoogleCloudStorage. Used multithreading to send more
-                    requests in ScraperAPI for time efficiency.
+                    Utilized Google Cloud Storage to store public LinkedIn
+                    profile URLs, employed ScraperAPI to retrieve the full HTML
+                    content of the profiles, and extracted key information using
+                    the BeautifulSoup library in Python. The crucial details
+                    were then stored as JSON in a file within Google Cloud
+                    Storage. Implemented multithreading to enhance efficiency by
+                    sending multiple requests concurrently to ScraperAPI.
                     <br />
                   </div>
                 </div>
@@ -327,10 +391,15 @@
                     LA Parks, a site where you can see parks and book parts of a
                     park for activities
                   </h2>
+                  <p class="PerioadaProiects">Oct. 2021 - Dec. 2021</p>
                   <b>Technologies:</b> React.js, Drupal, Docker
                   <p class="DescriereProiect" itemprop="">
-                    Worked in a team, as a FrontEnd developer for a short period
-                    of time. Fixed visual bugs and logic on FrontEnd.
+                    Collaborated within a team, serving as a FrontEnd developer
+                    for a brief duration. Addressed and resolved visual bugs and
+                    logic issues on the FrontEnd. This initial project provided
+                    valuable insights into working as a developer in a tech
+                    company, contributing significantly to my learning
+                    experience.
                     <br />
                     <a
                       class="linkInDescription"
@@ -353,10 +422,12 @@
                   </p>
 
                   <div id="project4ReadMore" class="MoreText hidden">
-                    I fixed an API filter on activities you can do in a park,
-                    based on personal account. The Project was built in Drupal
-                    7, React pages were integrated with Iframe. A big of my work
-                    consisted in visual bugs using CSS Injector in Drupal.
+                    I rectified an API filter related to park activities,
+                    personalized based on individual accounts. The project was
+                    constructed in Drupal 7, with React pages seamlessly
+                    integrated through Iframes. A substantial portion of my
+                    contribution involved addressing visual bugs using the CSS
+                    Injector in Drupal.
                     <br />
                   </div>
                 </div>
@@ -376,7 +447,7 @@
                 width="16px"
               />
 
-              internship project
+              internship project (Jul. 2021 - Sep. 2021)
             </span>
             <ul id="InternshipProject" class="ListaLinkuri Sublist hidden">
               <li class="ListaItem">
@@ -386,10 +457,11 @@
                   </h2>
                   <b>Technologies:</b> React.js, Express.js, MongoDB, Redux
                   <p class="DescriereProiect" itemprop="">
-                    Worked with one more person as FullStack developers. On the
-                    app you can search taks and assign the task to you. You can
-                    also list a task and another user can help you with the
-                    task.
+                    Collaborated with another individual as FullStack developers
+                    on an application where users can search for tasks and
+                    assign them to themselves. Additionally, users have the
+                    option to list a task, and another user can offer assistance
+                    with that task.
                     <br />
                   </p>
 
@@ -435,9 +507,10 @@
                     More details about my work on this project
                   </span>
                   <div id="project5ReadMore" class="MoreText hidden">
-                    Created a sign-up page, map page with pins using MapBoxGL
-                    library and cards with tasks on FrontEnd. Created log-in,
-                    sign-up routes on BackEnd.
+                    Developed a registration page, a map page with pins
+                    utilizing the MapBoxGL library, and task cards on the
+                    FrontEnd. Implemented login and sign-up routes on the
+                    BackEnd.
                     <br />
                     <div class="moreImagesGaleryProject">
                       <div>
