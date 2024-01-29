@@ -208,7 +208,7 @@
                     administrative tasks for teachers and school staff by
                     offering login through a Google account linked to an Edlink
                     (<a class="linkInDescription" href="https://ed.link"
-                      >edl.ink</a
+                      >ed.link</a
                     >) account. This encompasses various functionalities,
                     including class management and lesson planning, with data
                     stored in Google Drive.
@@ -252,6 +252,39 @@
                     Implemented functionality to include schools that do not use
                     a Learning Management System (LMS), such as Google Classroom
                     or Canvas, into our application.
+                    <br />
+                    <h3>Research</h3>
+                    <p>
+                      I conducted research on implementing a calendar component
+                      to display lesson plans over periods of time. I opted for
+                      the
+                      <a
+                        href="https://jquense.github.io/react-big-calendar/examples/index.html?path=/story/about-big-calendar--page"
+                        class="linkInDescription"
+                        >react-big-calendar</a
+                      >
+                      and created custom event components to represent lesson
+                      plans.
+                    </p>
+                    <p>
+                      Additionally, I was tasked with adding an attachment
+                      feature to an assignment. For this, I chose the
+                      <a
+                        href="https://www.npmjs.com/package/google-drive"
+                        class="linkInDescription"
+                        >Google Drive library</a
+                      >. Initially, I faced a challenge as it required a key on
+                      the frontend, raising security concerns about its
+                      visibility after bundling the app. However, it turned out
+                      not to be an issue since Google Drive keys are linked to
+                      Google App Key and the domain they are used on.
+                    </p>
+                    <p>
+                      To avoid logging into Google to access the Google Drive
+                      window, I used the Google login key, which was stored in
+                      cookies after logging into the base app.
+                    </p>
+                    <br />
                   </div>
                 </div>
               </li>
