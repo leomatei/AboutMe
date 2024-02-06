@@ -612,6 +612,71 @@
           <li class="ListaItem">
             <span
               class="readMore"
+              onclick="expandReadMore('HackathonProject',this)"
+            >
+              <img
+                class="downArrow rotate"
+                src="./assets/down-arrow.svg"
+                alt="expand icon"
+                width="16px"
+              />
+
+              SFAW internal Hackathon
+            </span>
+
+            <ul id="HackathonProject" class="ListaLinkuri Sublist">
+              <li class="ListaItem">
+                <div id="hackathon" class="ListaDropDown">
+                  <h2 class="TitluProiect">Dear diary</h2>
+                  <b>Technologies:</b> React.js, Node.js, OpenAI
+                  <p class="DescriereProiect" itemprop="">
+                    SFAW organized an internal Hackathon in Feb 2023, where
+                    employees had the opportunity to form teams and tackle
+                    real-world problems using AI. My team and I opted to develop
+                    an app designed as a diary for children. Users would be
+                    prompted to share information about their day, create a
+                    poetic story, generate accompanying illustrations, and even
+                    recite the narrative. The app would then collect feedback on
+                    how the user felt after experiencing the story, storing all
+                    responses. As part of our feature development, we aimed to
+                    implement a graphical representation of the feedback and
+                    adjust the storytelling approach to enhance long-term user
+                    happiness.
+                  </p>
+                </div>
+                <span
+                  class="readMore"
+                  onclick="expandReadMore('HackathonReadMore',this)"
+                >
+                  <img
+                    class="downArrow"
+                    src="./assets/down-arrow.svg"
+                    alt="expand icon"
+                    width="16px"
+                  />
+                  More details about my work on this project
+                </span>
+                <div id="HackathonReadMore" class="MoreText hidden">
+                  The user is required to provide their name, share their
+                  current emotional state along with the reasons behind it, and
+                  assign an intensity rating on a scale of 1 to 10.
+                  Additionally, the user will choose a spiritual animal. Using
+                  this data, the app will employ OpenAI to generate four images
+                  featuring the selected spiritual animal expressing the same
+                  emotion as the user. OpenAI will then generate a short story
+                  where the spiritual animal serves as the central character. To
+                  recite the story with accurate emotions, the app will make use
+                  of SSML from OpenAI. The user can assess their mood
+                  improvement using a slider.
+                  <br />
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="ListaItem">
+            <span
+              class="readMore"
               onclick="expandReadMore('SchoolProjects',this)"
             >
               <img
