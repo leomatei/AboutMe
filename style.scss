@@ -27,11 +27,24 @@ html {
 
 .back-button {
   background: rgba(0, 102, 255, 0.9);
+  border-radius: 8px;
   height: 2rem;
   width: 2rem;
   position: absolute;
   top: 5px;
   left: 5px;
+  padding: 0.25rem;
+}
+
+.top-button {
+  background: rgba(241, 243, 245, 0.9);
+  border: 1px solid rgba(0, 102, 255, 0.9);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  bottom: 5px;
+  right: 7px;
   padding: 0.25rem;
 }
 
@@ -291,7 +304,7 @@ header {
     height: 10rem;
   }
   @media (min-width: 300px) and (max-width: 900px) {
-    height: 8rem;
+    height: 14.2rem;
   }
 }
 
