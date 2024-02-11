@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro-RO" class="no-js">
   <head>
     <title>Matei Leonard-Marian - link-uri utile</title>
@@ -7,13 +7,11 @@
     <meta
       name="robots"
       content="index, follow,max-image-preview:large, 
-            max-snippet:-1, max-video-preview:-1"
-    />
+            max-snippet:-1, max-video-preview:-1" />
     <meta
       name="viewport"
       content="width=device-width,
-        initial-scale=1.0"
-    />
+        initial-scale=1.0" />
     <meta name="description" content="Links and info" />
     <script>
       window.fbAsyncInit = function () {
@@ -22,22 +20,21 @@
           //cookie     : true,
           xfbml: true,
           version: 'v11.0',
-        });
+        })
 
-        FB.AppEvents.logPageView();
-      };
-
-      (function (d, s, id) {
+        FB.AppEvents.logPageView()
+      }
+      ;(function (d, s, id) {
         var js,
-          fjs = d.getElementsByTagName(s)[0];
+          fjs = d.getElementsByTagName(s)[0]
         if (d.getElementById(id)) {
-          return;
+          return
         }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');
+        js = d.createElement(s)
+        js.id = id
+        js.src = 'https://connect.facebook.net/en_US/sdk.js'
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, 'script', 'facebook-jssdk')
     </script>
     <meta property="og:title" content="Matei Leonard-Marian - Links and info" />
     <meta property="og:description" content="Links and info" />
@@ -53,17 +50,14 @@
     <meta property="og:image:alt" content="Links and info" />
     <meta
       property="article:publisher"
-      content="https://www.linkedin.com/in/leonard-matei-84b743208/"
-    />
+      content="https://www.linkedin.com/in/leonard-matei-84b743208/" />
     <meta property="article:section" content="About me" />
     <meta
       property="article:published_time"
-      content="2021-06-30T17:30:00+03:00"
-    />
+      content="2021-06-30T17:30:00+03:00" />
     <meta
       property="article:modified_time"
-      content="2021-07-07T17:30:00+03:00"
-    />
+      content="2021-07-07T17:30:00+03:00" />
     <link rel="stylesheet" href="style.css" />
     <meta name="theme-color" content="#4F6DF5" />
     <meta name="apple-mobile-web-app-title" content="Matei Leonard" />
@@ -74,8 +68,8 @@
 
     <link rel="canonical" href="https://leomatei.github.io/AboutMe/" />
     <script type="module">
-      document.documentElement.classList.remove('no-js');
-      document.documentElement.classList.add('js');
+      document.documentElement.classList.remove('no-js')
+      document.documentElement.classList.add('js')
     </script>
 
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
@@ -83,20 +77,17 @@
     <link
       rel="./assets/apple-touch-icon"
       sizes="180x180"
-      href="./assets/apple-touch-icon.png"
-    />
+      href="./assets/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+      href="./assets/favicon-32x32.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
+      href="./assets/favicon-16x16.png" />
   </head>
 
   <body id="root" itemscope="" itemtype="https://schema.org/ProfilePage">
@@ -104,18 +95,29 @@
       <img src="./assets/home-button.svg" alt="" />
     </a>
     <div class="Container" itemscope="" itemtype="https://schema.org/Person">
-      <header>
+      <header id="top">
         <h1 class="TitlulPaginii">
           <strong itemprop="name">My projects</strong>
         </h1>
-
-        <!-- @TODO: add hackathon experience -->
 
         <p class="DescrierePrincipala" itemprop="description">
           Below you can see the projects I worked for at my job and personal
           projects.
           <br />
         </p>
+        <div>
+          Highlights:
+          <br />
+          <ul>
+            <li><a class="linkInDescription" href="#project1">Agora</a></li>
+            <li>
+              <a class="linkInDescription" href="#projectEdTech">EdTech</a>
+            </li>
+            <li>
+              <a class="linkInDescription" href="#hackathon">Dear Diary</a>
+            </li>
+          </ul>
+        </div>
       </header>
 
       <main>
@@ -126,8 +128,7 @@
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
                 alt="expand icon"
-                width="16px"
-              />
+                width="16px" />
 
               job projects
             </span>
@@ -150,19 +151,21 @@
                     backend, I transitioned into a FullStack Developer role.
                     <br />
                     You can
-                    <a href="https://abiento.frontporch.net/">click here</a> to
-                    see the app. However, please note that you won't be able to
-                    experience all the features without an account.
+                    <a
+                      class="linkInDescription"
+                      href="https://abiento.frontporch.net/"
+                      >click here</a
+                    >
+                    to see the app. However, please note that you won't be able
+                    to experience all the features without an account.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project1ReadMore', this)"
-                    >
+                      onclick="expandReadMore('project1ReadMore', this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -219,14 +222,12 @@
                     stored in Google Drive.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('projectEdTechReadMore',this)"
-                    >
+                      onclick="expandReadMore('projectEdTechReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -320,36 +321,31 @@
                         src="./assets/immi-guide-picture.jpg"
                         width="200px"
                         height="128px"
-                        loading="lazy"
-                      />
+                        loading="lazy" />
                     </a>
                     <a href="https://imi.guide/queer004" target="_blank">
                       <img
                         src="./assets/immi-guide-picture2.jpg"
                         width="200px"
                         height="128px"
-                        loading="lazy"
-                      />
+                        loading="lazy" />
                     </a>
                     <a href="https://imi.guide/saved" target="_blank">
                       <img
                         src="./assets/immi-guide-picture3.jpg"
                         width="200px"
                         height="128px"
-                        loading="lazy"
-                      />
+                        loading="lazy" />
                     </a>
                   </div>
                   <span
                     class="readMore"
-                    onclick="expandReadMore('project2ReadMore',this)"
-                  >
+                    onclick="expandReadMore('project2ReadMore',this)">
                     <img
                       class="downArrow"
                       src="./assets/down-arrow.svg"
                       alt="expand icon"
-                      width="16px"
-                    />
+                      width="16px" />
                     More details about my work on this project
                   </span>
                   <div id="project2ReadMore" class="MoreText hidden">
@@ -387,14 +383,12 @@
                     profiles.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project3ReadMore',this)"
-                    >
+                      onclick="expandReadMore('project3ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -436,14 +430,12 @@
                     >
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project4ReadMore',this)"
-                    >
+                      onclick="expandReadMore('project4ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -465,14 +457,12 @@
           <li class="ListaItem">
             <span
               class="readMore"
-              onclick="expandReadMore('InternshipProject',this)"
-            >
+              onclick="expandReadMore('InternshipProject',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
                 alt="expand icon"
-                width="16px"
-              />
+                width="16px" />
 
               internship project (Jul. 2021 - Sep. 2021)
             </span>
@@ -499,8 +489,7 @@
                         width="200px"
                         height="128px"
                         loading="lazy"
-                        onclick="expandPicture(this)"
-                      />
+                        onclick="expandPicture(this)" />
                     </div>
                     <div>
                       <img
@@ -508,8 +497,7 @@
                         width="200px"
                         height="128px"
                         loading="lazy"
-                        onclick="expandPicture(this)"
-                      />
+                        onclick="expandPicture(this)" />
                     </div>
                     <div>
                       <img
@@ -517,20 +505,17 @@
                         width="200px"
                         height="128px"
                         loading="lazy"
-                        onclick="expandPicture(this)"
-                      />
+                        onclick="expandPicture(this)" />
                     </div>
                   </div>
                   <span
                     class="readMore"
-                    onclick="expandReadMore('project5ReadMore',this)"
-                  >
+                    onclick="expandReadMore('project5ReadMore',this)">
                     <img
                       class="downArrow"
                       src="./assets/down-arrow.svg"
                       alt="expand icon"
-                      width="16px"
-                    />
+                      width="16px" />
                     More details about my work on this project
                   </span>
                   <div id="project5ReadMore" class="MoreText hidden">
@@ -546,8 +531,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -555,8 +539,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -564,8 +547,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -573,8 +555,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -582,8 +563,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -591,8 +571,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                       <div>
                         <img
@@ -600,8 +579,7 @@
                           width="200px"
                           height="128px"
                           loading="lazy"
-                          onclick="expandPicture(this)"
-                        />
+                          onclick="expandPicture(this)" />
                       </div>
                     </div>
                   </div>
@@ -612,14 +590,12 @@
           <li class="ListaItem">
             <span
               class="readMore"
-              onclick="expandReadMore('HackathonProject',this)"
-            >
+              onclick="expandReadMore('HackathonProject',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
                 alt="expand icon"
-                width="16px"
-              />
+                width="16px" />
 
               SFAW internal Hackathon
             </span>
@@ -646,14 +622,12 @@
                 </div>
                 <span
                   class="readMore"
-                  onclick="expandReadMore('HackathonReadMore',this)"
-                >
+                  onclick="expandReadMore('HackathonReadMore',this)">
                   <img
                     class="downArrow"
                     src="./assets/down-arrow.svg"
                     alt="expand icon"
-                    width="16px"
-                  />
+                    width="16px" />
                   More details about my work on this project
                 </span>
                 <div id="HackathonReadMore" class="MoreText hidden">
@@ -677,14 +651,12 @@
           <li class="ListaItem">
             <span
               class="readMore"
-              onclick="expandReadMore('SchoolProjects',this)"
-            >
+              onclick="expandReadMore('SchoolProjects',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
                 alt="expand icon"
-                width="16px"
-              />
+                width="16px" />
 
               school projects
             </span>
@@ -700,14 +672,12 @@
                     <br />
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project6ReadMore',this)"
-                    >
+                      onclick="expandReadMore('project6ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -735,14 +705,12 @@
                     >
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project7ReadMore',this)"
-                    >
+                      onclick="expandReadMore('project7ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
                         alt="expand icon"
-                        width="16px"
-                      />
+                        width="16px" />
                       More details about my work on this project
                     </span>
                   </p>
@@ -817,7 +785,15 @@
 
       <footer></footer>
     </div>
-
+    <a href="#top" class="top-button">
+      <svg
+        data-name="1-Arrow Up"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32">
+        <path
+          d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z" />
+      </svg>
+    </a>
     <script defer src="script.js"></script>
   </body>
 </html>
