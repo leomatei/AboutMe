@@ -109,12 +109,37 @@
           Highlights:
           <br />
           <ul>
-            <li><a class="linkInDescription" href="#project1">Agora</a></li>
             <li>
-              <a class="linkInDescription" href="#projectEdTech">EdTech</a>
+              <a
+                class="linkInDescription"
+                href="#project9"
+                onclick="expandItsSection('project9')"
+                >Library</a
+              >
             </li>
             <li>
-              <a class="linkInDescription" href="#hackathon">Dear Diary</a>
+              <a
+                class="linkInDescription"
+                href="#project1"
+                onclick="expandItsSection('project1')"
+                >Agora</a
+              >
+            </li>
+            <li>
+              <a
+                class="linkInDescription"
+                href="#projectEdTech"
+                onclick="expandItsSection('projectEdTech')"
+                >EdTech</a
+              >
+            </li>
+            <li>
+              <a
+                class="linkInDescription"
+                href="#hackathon"
+                onclick="expandItsSection('hackathon')"
+                >Dear Diary</a
+              >
             </li>
           </ul>
         </div>
@@ -123,7 +148,7 @@
       <main>
         <ul class="ListaLinkuri">
           <li class="ListaItem">
-            <span class="readMore" onclick="expandReadMore('JobProjects',this)">
+            <span class="readMore" onclick="toggleReadMore('JobProjects',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
@@ -160,7 +185,7 @@
                     to experience all the features without an account.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project1ReadMore', this)">
+                      onclick="toggleReadMore('project1ReadMore', this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -222,7 +247,7 @@
                     stored in Google Drive.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('projectEdTechReadMore',this)">
+                      onclick="toggleReadMore('projectEdTechReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -340,7 +365,7 @@
                   </div>
                   <span
                     class="readMore"
-                    onclick="expandReadMore('project2ReadMore',this)">
+                    onclick="toggleReadMore('project2ReadMore',this)">
                     <img
                       class="downArrow"
                       src="./assets/down-arrow.svg"
@@ -383,7 +408,7 @@
                     profiles.
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project3ReadMore',this)">
+                      onclick="toggleReadMore('project3ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -430,7 +455,7 @@
                     >
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project4ReadMore',this)">
+                      onclick="toggleReadMore('project4ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -451,34 +476,16 @@
                   </div>
                 </div>
               </li>
-            </ul>
-          </li>
-
-          <li class="ListaItem">
-            <span
-              class="readMore"
-              onclick="expandReadMore('InternshipProject',this)">
-              <img
-                class="downArrow rotate"
-                src="./assets/down-arrow.svg"
-                alt="expand icon"
-                width="16px" />
-
-              internship project (Jul. 2021 - Sep. 2021)
-            </span>
-            <ul id="InternshipProject" class="ListaLinkuri Sublist">
               <li class="ListaItem">
                 <div id="project5" class="ListaDropDown">
-                  <h2 class="TitluProiect">
-                    An app where people can search for help
-                  </h2>
+                  <h2 class="TitluProiect">Internship project</h2>
+                  <p class="PerioadaProiects">Jun. 2021 - Sep. 2021</p>
                   <b>Technologies:</b> React.js, Express.js, MongoDB, Redux
                   <p class="DescriereProiect" itemprop="">
-                    Collaborated with another individual as FullStack developers
-                    on an application where users can search for tasks and
-                    assign them to themselves. Additionally, users have the
-                    option to list a task, and another user can offer assistance
-                    with that task.
+                    Worked as FullStack developer in a team of two, on an
+                    application where users can search for tasks and assign them
+                    to themselves. Additionally, users have the option to list a
+                    task, and another user can offer assistance with that task.
                     <br />
                   </p>
 
@@ -510,7 +517,7 @@
                   </div>
                   <span
                     class="readMore"
-                    onclick="expandReadMore('project5ReadMore',this)">
+                    onclick="toggleReadMore('project5ReadMore',this)">
                     <img
                       class="downArrow"
                       src="./assets/down-arrow.svg"
@@ -590,7 +597,7 @@
           <li class="ListaItem">
             <span
               class="readMore"
-              onclick="expandReadMore('HackathonProject',this)">
+              onclick="toggleReadMore('HackathonProject',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
@@ -622,7 +629,7 @@
                 </div>
                 <span
                   class="readMore"
-                  onclick="expandReadMore('HackathonReadMore',this)">
+                  onclick="toggleReadMore('HackathonReadMore',this)">
                   <img
                     class="downArrow"
                     src="./assets/down-arrow.svg"
@@ -651,7 +658,7 @@
           <li class="ListaItem">
             <span
               class="readMore"
-              onclick="expandReadMore('SchoolProjects',this)">
+              onclick="toggleReadMore('SchoolProjects',this)">
               <img
                 class="downArrow rotate"
                 src="./assets/down-arrow.svg"
@@ -672,7 +679,7 @@
                     <br />
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project6ReadMore',this)">
+                      onclick="toggleReadMore('project6ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -705,7 +712,7 @@
                     >
                     <span
                       class="readMore"
-                      onclick="expandReadMore('project7ReadMore',this)">
+                      onclick="toggleReadMore('project7ReadMore',this)">
                       <img
                         class="downArrow"
                         src="./assets/down-arrow.svg"
@@ -776,6 +783,85 @@
                       >Click here to see the source code!</a
                     >
                   </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="ListaItem">
+            <span
+              class="readMore"
+              onclick="toggleReadMore('PersonalProjects',this)">
+              <img
+                class="downArrow rotate"
+                src="./assets/down-arrow.svg"
+                alt="expand icon"
+                width="16px" />
+
+              Personal projects
+            </span>
+            <ul id="PersonalProjects" class="ListaLinkuri Sublist">
+              <li class="ListaItem">
+                <div id="project9" class="ListaDropDown">
+                  <h2 class="TitluProiect">Library</h2>
+                  <b>Technologies:</b> TypeScript, React, Noden GraphQL, SCSS,
+                  MaterialUI, Postgres, TypeORM, Vercel
+                  <p class="DescriereProiect" itemprop="">
+                    Designed to manage books, enabling users to store, view,
+                    add, update, and delete entries. Developed as a personal
+                    project, the primary aims were to gain proficiency in
+                    TypeScript, deploy a full-stack application on Vercel, and
+                    implement the MVC design pattern.
+                    <br />
+                    App:
+                    <a
+                      class="linkInDescription"
+                      target="_blank"
+                      href="https://library-client-ten.vercel.app/">
+                      https://library-client-ten.vercel.app/</a
+                    >
+                    <br />
+                    Code:<br />
+                    <a
+                      class="linkInDescription"
+                      target="_blank"
+                      href="https://github.com/leomatei/library"
+                      >client</a
+                    >
+                    <br />
+                    <a
+                      class="linkInDescription"
+                      target="_blank"
+                      href="https://github.com/leomatei/library-server"
+                      >server</a
+                    >
+                    <span
+                      class="readMore"
+                      onclick="toggleReadMore('project9ReadMore',this)">
+                      <img
+                        class="downArrow"
+                        src="./assets/down-arrow.svg"
+                        alt="expand icon"
+                        width="16px" />
+                      More details about my work on this project
+                    </span>
+                  </p>
+
+                  <div id="project9ReadMore" class="MoreText hidden">
+                    Started configuring Prettier, ESLint and Typescript rules,
+                    to define my code aesthetics. On FE, I kept it simple using
+                    components from MaterialUI and incorporating minimal css. I
+                    implemented two modals, utilizing the useContext hook to
+                    enhance modularity within the application. I opted for
+                    useContext over Redux due to my limited prior experience
+                    with the useContext hook in my career.
+                    <br />
+                    On BE decide to use Vercel Postgres, which is a cloud DB
+                    easy to setup after deploying an app on Vercel. TypeORM was
+                    employed to handle database operations efficiently.
+                    Additionally, I implemented soft delete functionality to
+                    manage data deletion seamlessly.
+                    <br />
+                  </div>
                 </div>
               </li>
             </ul>
