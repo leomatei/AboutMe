@@ -28,8 +28,8 @@ html {
 .back-button {
   background: rgba(0, 102, 255, 0.9);
   border-radius: 8px;
-  height: 2rem;
-  width: 2rem;
+  height: clamp(2rem, 5vw, 4rem);
+  width: clamp(2rem, 5vw, 4rem);
   position: absolute;
   top: 5px;
   left: 5px;
@@ -40,8 +40,8 @@ html {
   background: rgba(241, 243, 245, 0.9);
   border: 1px solid rgba(0, 102, 255, 0.9);
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: clamp(2rem, 5vw, 6rem);
+  width: clamp(2rem, 5vw, 6rem);
   position: fixed;
   bottom: 5px;
   right: 7px;
@@ -155,7 +155,7 @@ strong {
 }
 
 .TitluProiect {
-  font-size: 24px;
+  font-size: clamp(1.2rem, 2.4vw, 3rem);
 }
 
 .PerioadaProiect {
@@ -163,7 +163,7 @@ strong {
 }
 
 .DescriereProiect {
-  font-size: 24px;
+  font-size: clamp(0.9rem, 2vw, 2rem);
 }
 
 .imageGaleryProject {
@@ -507,9 +507,6 @@ main {
     text-decoration: underline;
   }
 }
-/*
-aceste comenzi ne ajuta pentru pentru cand vrem sa printam pagina web
-putem vizualiza cum ar arata pagina printata cu
-F12 > console > 3 puncte in stanga > rendering > 
-> emulate CSS media type > print ( optinal* > ctrl + p )
-*/
+li:focus {
+  display: block;
+}
